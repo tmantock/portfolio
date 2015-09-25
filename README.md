@@ -1,6 +1,6 @@
 # Portfolio Project
 ## Overview
-This project is used to present the skills you learn through the program to potential employers. All employers will be looking for a portfolio site that has good coding & visual examples. The different versions of this project are directly related to the skill sets that you should have obtained at the time. This project will be worked on throughout the class and is the default project to work on when you feel like you are caught up on all other items (Weekly Projects, Readings, Videos, Prototypes, Skill Assessments).
+This project is used to present the skills you learn through the program to potential employers. All employers will be looking for a portfolio site that has good coding & visual examples. The different versions of this project are directly related to the skill sets that you should have obtained at the time. This project the type of project that will be worked on through the program and is the default project to work on when you feel like you are caught up on all other items (Weekly Projects, Readings, Videos, Prototypes, Skill Assessments).
 
 ##Versions
 
@@ -9,7 +9,21 @@ This project is used to present the skills you learn through the program to pote
 
 > This Version is done during the first couple weeks and allows you to practice the basics of HTML with your own flare. The scope for this version asks the student to choose a layout and integrate what they have learned from the Resources they have consumed and the prototypes they have done and put it into one cohesive version of a project.
 
-> #### Scope - <a href="https://github.com/Learning-Fuze/portfolio/blob/master/README.md#v1">View Below</a>
+> #### Getting Started
+> - Fork this Repo by clicking on the <b>Fork</b> button in the top right of this page
+> - Clone the newly created repo to your local machine
+>   - `git clone https://github.com/[your_user_name]/portfolio.git` - <b>change out [your_user_name]</b>
+> - Create feature branch
+>   - `git checkout -b v1`
+> - Work on the scope defined below
+> - Add files to git
+>   - `git add .`
+> - Commit files (Group Files together)
+>   - `git commit -m "Portfolio V1 - Eric Johnson""` - <b>replace Eric Johnson with your name</b>
+> - Send to Github (Push)
+>   - `git push origin v1`
+
+> #### Scope - View
 
 > #### Related Videos
 
@@ -33,7 +47,7 @@ This project is used to present the skills you learn through the program to pote
 ## Scopes
 
 ### v1
-> 1. Choose a layout from html_fundamentals_5 prototype - <a href="https://github.com/Learning-Fuze/prototypes/tree/master/html_fundamentals_5#coding-instructions" target="_blank">view</a>
+> 1. Choose a layout from html_fundamentals_5 prototype - view
 > 1. Take content you have previously generated in past prototypes and do the following:
 >   1. Required Content Sections
 >       1. About Me
@@ -49,6 +63,7 @@ This project is used to present the skills you learn through the program to pote
 >           1. Github Account Link
 >           1. Email Address
 >           1. LinkedIn Profile Link
+>           1. Contact form
 >       1. Add content to appropriate section / page (depending on the layout choice) in your portfolio project
 >       1. Create an appropriate menu in your layout’s nav/header section
 >           1. Link menu items to required content pages or sections (as defined in the layouts in the prototype referenced above)
