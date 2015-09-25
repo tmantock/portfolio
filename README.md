@@ -23,7 +23,7 @@ This project is used to present the skills you learn through the program to pote
 > - Send to Github (Push)
 >   - `git push origin v1`
 
-> #### Scope - View
+> #### Scope - <a href="https://github.com/Learning-Fuze/portfolio#v1">View</a>
 
 > #### Related Videos
 
