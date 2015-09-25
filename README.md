@@ -49,7 +49,6 @@ This project is used to present the skills you learn through the program to pote
 >           1. Github Account Link
 >           1. Email Address
 >           1. LinkedIn Profile Link
->           1. Contact form
 >       1. Add content to appropriate section / page (depending on the layout choice) in your portfolio project
 >       1. Create an appropriate menu in your layout’s nav/header section
 >           1. Link menu items to required content pages or sections (as defined in the layouts in the prototype referenced above)
