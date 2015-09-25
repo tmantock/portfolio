@@ -9,7 +9,7 @@ This project is used to present the skills you learn through the program to pote
 
 > This Version is done during the first couple weeks and allows you to practice the basics of HTML with your own flare. The scope for this version asks the student to choose a layout and integrate what they have learned from the Resources they have consumed and the prototypes they have done and put it into one cohesive version of a project.
 
-> #### Scope - View
+> #### Scope - <a href="https://github.com/Learning-Fuze/portfolio/blob/master/README.md#v1">View Below</a>
 
 > #### Related Videos
 
