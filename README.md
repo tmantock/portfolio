@@ -33,7 +33,7 @@ This project is used to present the skills you learn through the program to pote
 ## Scopes
 
 ### v1
-> 1. Choose a layout from html_fundamentals_5 prototype - <a href="https://github.com/Learning-Fuze/prototypes/tree/master/html_fundamentals_5" target="_blank">view</a>
+> 1. Choose a layout from html_fundamentals_5 prototype - <a href="https://github.com/Learning-Fuze/prototypes/tree/master/html_fundamentals_5#coding-instructions" target="_blank">view</a>
 > 1. Take content you have previously generated in past prototypes and do the following:
 >   1. Required Content Sections
 >       1. About Me
