@@ -67,3 +67,16 @@ This project is used to present the skills you learn through the program to pote
 >       1. Add content to appropriate section / page (depending on the layout choice) in your portfolio project
 >       1. Create an appropriate menu in your layout’s nav/header section
 >           1. Link menu items to required content pages or sections (as defined in the layouts in the prototype referenced above)
+
+### v2
+> 1. Add A contact form into your contact me section from V1
+    - Should have the following fields:
+     - Name (text input)
+     - email (text input)
+     - Message (textarea)
+     - Submit (button of type submit)
+    - Should be responsive and display appropriately on a mobile device
+      - fields should be single columns
+    - Form should submit 
+    - URL to submit to http://learningfuze.com/echo.php 
+    - utilizing the POST method
