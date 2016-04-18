@@ -1,0 +1,154 @@
+body {
+    max-width: 2000px;
+    height: 100%;
+    background-color: #f8f8f8;
+}
+/*Navigation Bar*/
+.site-navigation {
+    width: 100%;
+    height: 10%;
+    position: relative;
+}
+
+.site-navigation ul {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.site-navigation a {
+    display: inline-block;
+    position: relative;
+    margin: 0 5%;
+    text-decoration: none;
+}
+
+.site-navigation li {
+    list-style-type: none;
+    color: black;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+}
+
+#circle-front {
+    position: relative;
+    width: 45px;
+    height: 45px;
+    background: #EEEEEE;
+    border-radius: 50%;
+    font-family: 'Kalam', cursive;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+}
+
+#loader {
+    width: 55px;
+    height: 53px;
+    background: transparent;
+    border-radius: 50%;
+    border: 5px solid transparent;
+    border-top: 3px solid #BFBFBF;
+    border-bottom: 3px solid #BFBFBF;
+    animation: spin 4s linear infinite;
+    position: absolute;
+    top: 24%;
+    left: -10%;
+    margin: 0;
+    padding: 0;
+}
+
+
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+#circle-front h1 {
+    font-family: 'Roboto Mono', Arial, sans-serif;
+    font-size: 1em;
+    position: relative;
+}
+
+#circle-front h1:first-letter {
+    font-size: 1.5em;
+    text-transform: none;
+}
+
+/*About Me Page Contents*/
+
+#about-me-body {
+    background: url('http://interfacelift.com/wallpaper/De88aa64/04041_mountrainier_1920x1080.jpg');
+}
+
+svg {
+    width: 100%;
+    height: 10vh;
+    margin: 5% 0;
+}
+
+svg path {
+    fill: none;
+    stroke: #000;
+    stroke-width: 5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke-dasharray: 1700;
+    stroke-dashoffset: 1700;
+    -webkit-animation: dash 5s linear forwards;
+    animation: dash 5s linear forwards;
+}
+
+@-webkit-keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.about-me-row-1 {
+    width: 100%;
+    height: 75vh;
+    border: 1px solid black;
+}
+
+.about-me-row-2 div,
+.about-me-row-3 div,
+.about-me-row-4 div {
+    height: 50vh;
+    border: 1px solid black;
+}
+
+/*Contacts Page Content*/
+article {
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+article h1 {
+    margin-top: 5%;
+}
+
+article h1,
+article h2 {
+    margin-bottom: 5%;
+}
+
+article ul li {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0;
+    margin-right: 3%;
+}
+
+.contact-glyphs li a{
+    text-decoration: none;
+    padding: 0 50%;
+    font-size: 2.5em;
+    position: relative;
+    color: black;
+}
