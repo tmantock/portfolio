@@ -4,30 +4,41 @@ body {
     background-color: #f8f8f8;
 }
 /*Navigation Bar*/
-.site-navigation {
+.navbar {
     width: 100%;
-    height: 10%;
-    position: relative;
+    height: 7%;
+    position: fixed;
+    margin: 0;
+    padding: 0;
+    z-index: +1;
 }
 
-.site-navigation ul {
+.navbar ul {
+    position: relative;
+    top: 45%;
+    transform: translateY(-45%);
     text-align: center;
     margin: 0;
     padding: 0;
 }
 
-.site-navigation a {
+.navbar a {
     display: inline-block;
     position: relative;
     margin: 0 5%;
     text-decoration: none;
 }
 
-.site-navigation li {
+.navbar li {
     list-style-type: none;
     color: black;
     text-transform: uppercase;
     font-family: 'Raleway', sans-serif;
+}
+
+.col-md-12 {
+    margin: 0;
+    padding: 0;
 }
 
 #circle-front {
@@ -70,6 +81,40 @@ body {
     position: relative;
     font-weight: 800;
     top: 25%;
+}
+
+/*Projects CSS*/
+
+.projectImageContainer {
+    height: 100vh;
+}
+
+#projectOne {
+    background: url('./images/mountain.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#projectTwo {
+    background: url('./images/space.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#projectThree {
+    background: url('./images/snow.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#projectFour {
+    background: url('./images/waterfall.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 /*About Me Page Contents*/
@@ -121,21 +166,21 @@ svg path {
 }
 
 /*Contacts Page Content*/
-article {
+.contactContainer {
     text-align: center;
     font-family: 'Raleway', sans-serif;
 }
 
-article h1 {
+.contactContainer h1 {
     margin-top: 5%;
 }
 
-article h1,
-article h2 {
+.contactContainer h1,
+.contactContainer h2 {
     margin-bottom: 5%;
 }
 
-article ul li {
+.contactContainer ul li {
     display: inline-block;
     text-decoration: none;
     padding: 0;
