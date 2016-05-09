@@ -87,31 +87,46 @@ body {
 
 .projectImageContainer {
     height: 100vh;
+    border: none;
 }
 
+.projectTitle {
+    width: 45%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    top: 45%;
+    left: 45%;
+    transform: translate(-45%,-45%);
+    z-index: +1;
+    font-size: 4em;
+    border: 3px solid black;
+}
+
+
 #projectOne {
-    background: url('./images/mountain.jpg');
+    background: linear-gradient(rgba(255,255,255,.20),rgba(255,255,255,.20)), url('./images/mountain.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
 #projectTwo {
-    background: url('./images/space.jpg');
+    background: linear-gradient(rgba(255,255,255,.20),rgba(255,255,255,.20)), url('./images/space.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
 #projectThree {
-    background: url('./images/snow.jpg');
+    background: linear-gradient(rgba(255,255,255,.20),rgba(255,255,255,.20)), url('./images/snow.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
 #projectFour {
-    background: url('./images/waterfall.jpg');
+    background: linear-gradient(rgba(255,255,255,.20),rgba(255,255,255,.20)), url('./images/waterfall.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
