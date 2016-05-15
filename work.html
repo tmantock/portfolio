@@ -27,33 +27,28 @@
     </nav>
     <div class = 'list_container'>
         <div class = 'project_list'>
-            <div class = 'projectTitle' data-project = 'projectOne' onclick = 'pageScroll(this)'><h1>InterStellar Concept</h1></div>
+            <div class = 'projectTitle selectProject' data-project = 'projectOne' data-information="projectInformationOne" onclick = 'pageScroll(this)'><h1>InterStellar Concept</h1></div>
             <div class = 'line'></div>
-            <div class = 'projectTitle' data-project = 'projectTwo' onclick = 'pageScroll(this)'><h1>Panels</h1></div>
+            <div class = 'projectTitle' data-project = 'projectTwo' data-information="projectInformationTwo" onclick = 'pageScroll(this)'><h1>Panels</h1></div>
             <div class = 'line'></div>
-            <div class = 'projectTitle' data-project = 'projectThree' onclick = 'pageScroll(this)'><h1>Moments</h1></div>
+            <div class = 'projectTitle' data-project = 'projectThree' data-information="projectInformationThree" onclick = 'pageScroll(this)'><h1>Moments</h1></div>
             <div class = 'line'></div>
-            <div class = 'projectTitle' data-project = 'projectFour' onclick = 'pageScroll(this)'><h1>Calcutron</h1></div>
+            <div class = 'projectTitle' data-project = 'projectFour' data-information="projectInformationFour" onclick = 'pageScroll(this)'><h1>Calcutron</h1></div>
             <div class = 'line'></div>
-            <div class = 'projectTitle' data-project = 'projectFive' onclick = 'pageScroll(this)'><h1>Student Grade Table</h1></div>
+            <div class = 'projectTitle' data-project = 'projectFive' data-information="projectInformationFive" onclick = 'pageScroll(this)'><h1>Student Grade Table</h1></div>
         </div>
     </div>
     <div class = 'projectContainer'>
-        <div class = 'projectImageContainer col-md-12' id = 'projectOne'>
-
-        </div>
-        <div class = 'projectImageContainer col-md-12' id = 'projectTwo'>
-
-        </div>
-        <div class = 'projectImageContainer col-md-12' id = 'projectThree'>
-
-        </div>
-        <div class = 'projectImageContainer col-md-12' id = 'projectFour'>
-
-        </div>
-        <div class = 'projectImageContainer col-md-12' id = 'projectFive'>
-
-        </div>
+        <div class = 'projectImageContainer col-md-12' id = 'projectOne' data-information="projectInformationOne"></div>
+        <div class = 'projectInformation col-md-12' id = 'projectInformationOne' data-project = 'projectOne'></div>
+        <div class = 'projectImageContainer col-md-12' id = 'projectTwo'></div>
+        <div class = 'projectInformation col-md-12' id = 'projectInformationTwo' data-project = 'projectTwo'></div>
+        <div class = 'projectImageContainer col-md-12' id = 'projectThree'></div>
+        <div class = 'projectInformation col-md-12' id = 'projectInformationThree' data-project = 'projectThree'></div>
+        <div class = 'projectImageContainer col-md-12' id = 'projectFour'></div>
+        <div class = 'projectInformation col-md-12' id = 'projectInformationFour' data-project = 'projectFour'></div>
+        <div class = 'projectImageContainer col-md-12' id = 'projectFive'></div>
+        <div class = 'projectInformation col-md-12' id = 'projectInformationFive'  data-project = 'projectFive'></div>
     </div>
 </body>
 </html>
