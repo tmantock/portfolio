@@ -84,23 +84,47 @@ body {
 }
 
 /*Projects CSS*/
+#work_page {
+    overflow: hidden;
+}
 
 .projectImageContainer {
     height: 100vh;
     border: none;
 }
 
-.projectTitle {
+.project_list{
+    height: 50%;
     width: 45%;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
     position: relative;
     top: 45%;
     left: 45%;
     transform: translate(-45%,-45%);
-    z-index: +1;
+    margin: 0;
+    padding: 0;
+    z-index: +5;
+}
+
+.projectTitle {
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
     font-size: 4em;
     border: 3px solid black;
+    margin: 0;
+    padding: 0;
+}
+
+.line {
+    height: 4vh;
+    width: 3px;
+    border-left: 3px solid black;
+    position: relative;
+    left: 50%;
+    margin:0;
+    padding: 0;
 }
 
 
@@ -127,6 +151,13 @@ body {
 
 #projectFour {
     background: linear-gradient(rgba(255,255,255,.20),rgba(255,255,255,.20)), url('./images/waterfall.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#projectFive {
+    background: linear-gradient(rgba(255,255,255,.20),rgba(255,255,255,.20)), url('./images/snow.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;

@@ -14,8 +14,8 @@
     <script src = 'script.js'></script>
     <link href = "style.css" rel = "stylesheet" type = "text/css">
 </head>
-<body>
-    <nav class = "navbar col-md-12">
+<body id = "work_page">
+    <nav id = 'navbar' class = "navbar col-md-12">
         <ul>
             <a href = "work.html"><li>Work</li></a>
             <a href = "artwork.html"><li>Artwork</li></a>
@@ -26,16 +26,29 @@
         </ul>
     </nav>
     <div class = 'projectImageContainer col-md-12' id = 'projectOne'>
-        <div class = 'projectTitle'><h1>InterStellar Concept</h1></div>
+        <div class = 'project_list'>
+            <div class = 'projectTitle' data-project = 'projectOne' onclick = 'pageScroll(this)'><h1>InterStellar Concept</h1></div>
+            <div class = 'line'></div>
+            <div class = 'projectTitle' data-project = 'projectTwo' onclick = 'pageScroll(this)'><h1>Panels</h1></div>
+            <div class = 'line'></div>
+            <div class = 'projectTitle' data-project = 'projectThree' onclick = 'pageScroll(this)'><h1>Moments</h1></div>
+            <div class = 'line'></div>
+            <div class = 'projectTitle' data-project = 'projectFour' onclick = 'pageScroll(this)'><h1>Calcutron</h1></div>
+            <div class = 'line'></div>
+            <div class = 'projectTitle' data-project = 'projectFive' onclick = 'pageScroll(this)'><h1>Student Grade Table</h1></div>
+        </div>
     </div>
     <div class = 'projectImageContainer col-md-12' id = 'projectTwo'>
-        <div class = 'projectTitle'><h1>Panels</h1></div>
+
     </div>
     <div class = 'projectImageContainer col-md-12' id = 'projectThree'>
-        <div class = 'projectTitle'><h1>Calcutron</h1></div>
+
     </div>
     <div class = 'projectImageContainer col-md-12' id = 'projectFour'>
-        <div class = 'projectTitle'><h1>Student Grade Table</h1></div>
+
+    </div>
+    <div class = 'projectImageContainer col-md-12' id = 'projectFive'>
+
     </div>
 </body>
 </html>
