@@ -7,9 +7,10 @@ body {
 /*Navigation Bar*/
 #navbar {
     width: 100%;
-    height: 7% !important;
+    height: 7%;
     margin: 0;
     padding: 0;
+    background: transparent;
     z-index: +7;
 }
 
@@ -56,8 +57,8 @@ body {
 
 .circle {
     position: absolute;
-    width: 85%;
-    height: 85%;
+    width: 89%;
+    height: 89%;
     background: #EEEEEE;
     border-radius: 50%;
     top: 45%;
@@ -348,4 +349,37 @@ svg path {
     left: 45%;
     transform: translateX(-45%);
     margin-top: 2%;
+}
+
+@media screen and (max-width: 627px) {
+    #navbar {
+        font-size: 0.7em;
+    }
+
+    .circleContainer {
+        height: 30px;
+        width: 30px;
+        right: 48%;
+    }
+
+    .circle h1 {
+        bottom: 45%;
+    }
+
+    .projectTitle {
+        width: 90vw;
+    }
+
+    .selectProject h1 {
+        font-size: 3.6em;
+    }
+
+    .projectTitle h1 {
+        font-size: 2.7em;
+    }
+
+    .projectTextContainer {
+        height: 85%;
+        overflow: hidden;
+    }
 }

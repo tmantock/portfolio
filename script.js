@@ -41,10 +41,10 @@ function pageScroll (element) {
     }
     
     if(project == 'projectThree') {
-        $('#navbar li').css('color','black');
+        $('.navbar li').css('color','black');
     }
     else{
-        $('#navbar li').css('color','#ffffff');
+        $('.navbar li').css('color','#ffffff');
     }
 
     $(element).addClass('selectProject');
@@ -73,10 +73,26 @@ function starScroll () {
         var newPosition = randomPosition();
         starBig = $('<div>').addClass('big_star').css({top:newPosition[0],left: newPosition[1]});
         $('#projectInformationTwo').append(starBig);
-        for(x=0;x<30;x++) {
+        for(x=0;x<25;x++) {
             var newPosition = randomPosition();
             starSmall = $('<div>').addClass('small_star').css({top:newPosition[0],left: newPosition[1]});
             $('#projectInformationTwo').append(starSmall);
         }
     }
 }
+
+$(function($){
+    var windowWidth = $(window).width();
+    var windowHeigth = $(window).height();
+
+    $(window).resize(function() {
+        if(windowWidth != $(window).width()){
+            location.reload();
+            return;
+        }
+        if(windowHeigth != $(window).height()){
+            location.reload();
+            return;
+        }
+    });
+});
