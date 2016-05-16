@@ -41,10 +41,10 @@ function pageScroll (element) {
     }
     
     if(project == 'projectThree') {
-        $('.navbar li').css('color','black');
+        $('#navbar li').css('color','black');
     }
     else{
-        $('.navbar li').css('color','#ffffff');
+        $('#navbar li').css('color','#ffffff');
     }
 
     $(element).addClass('selectProject');

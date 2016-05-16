@@ -31,9 +31,13 @@ body {
 
 #navbar li {
     list-style-type: none;
-    color: black;
     text-transform: uppercase;
     font-family: 'Raleway', sans-serif;
+    color: #000000;
+}
+
+#work_page #navbar li {
+    color: #ffffff;
 }
 
 .col-md-12 {
@@ -91,6 +95,7 @@ body {
     position: relative;
     font-weight: 800;
     bottom: 25%;
+    color: #000000;
 }
 
 /*Projects CSS*/
