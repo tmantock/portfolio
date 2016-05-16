@@ -10,7 +10,7 @@ body {
     height: 7%;
     margin: 0;
     padding: 0;
-    background: transparent;
+    background: linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.25));
     z-index: +7;
 }
 
@@ -57,8 +57,8 @@ body {
 
 .circle {
     position: absolute;
-    width: 89%;
-    height: 89%;
+    width: 90%;
+    height: 90%;
     background: #EEEEEE;
     border-radius: 50%;
     top: 45%;
@@ -76,18 +76,12 @@ body {
     background: transparent;
     border-radius: 50%;
     border: 5px solid transparent;
-    border-top: 3px solid #BFBFBF;
-    border-bottom: 3px solid #BFBFBF;
+    border-top: 3px solid #2C3E50;
+    border-bottom: 3px solid #2C3E50;
     animation: spin 4s linear infinite;
     position: absolute;
     margin: 0;
     padding: 0;
-}
-
-
-@keyframes spin {
-    0% {transform: rotate(0deg);}
-    100% {transform: rotate(360deg);}
 }
 
 .circle h1 {
@@ -101,7 +95,8 @@ body {
 
 /*Projects CSS*/
 #work_page {
-    overflow: hidden;
+    position: fixed;
+    overflow-y: scroll;
 }
 
 #work_page .navbar li {
@@ -153,7 +148,7 @@ body {
     border-left: 3px solid black;
     position: relative;
     top: 18%;
-    left: 47%;
+    left: 50%;
     margin:0;
     padding: 0;
 }
@@ -165,6 +160,18 @@ body {
 .selectProject h1 {
     font-size: 4em;
 }
+
+/*.wheatley_container {*/
+    /*position: absolute;*/
+    /*height: 20vh;*/
+    /*width: 10vw;*/
+/*}*/
+
+/*.wheatley {*/
+    /*height: 20vh;*/
+    /*width: 10vw;*/
+    /*animation: spin 6s linear infinite;*/
+/*}*/
 
 
 #projectOne {
@@ -219,7 +226,7 @@ body {
     height: 1px;
     width: 1px;
     background: #ffffff;
-    animation: scroll 50s linear infinite;
+    animation: scroll 25s linear infinite;
 }
 
 .big_star {
@@ -227,7 +234,7 @@ body {
     height: 3px;
     width: 3px;
     background: #ffffff;
-    animation: scroll 100s linear infinite;
+    animation: scroll 75s linear infinite;
 }
 
 .projectTextContainer {
@@ -237,15 +244,12 @@ body {
     top: 45%;
     left: 45%;
     transform: translate(-45%,-45%);
+    background: linear-gradient(rgba(0,0,0,.40),rgba(0,0,0,.40));
     padding: 0 5%;
     border: 1px solid white;
     color: #ffffff;
+    font-weight: 600;
     display: none;
-}
-
-#moments {
-    color: #000000;
-    background: linear-gradient(rgba(255,255,255,.50),rgba(255,255,255,.50));
 }
 
 .projectHeader {
@@ -255,6 +259,37 @@ body {
 
 .projectText {
     font-size: 1.2em;
+}
+
+.panelRow {
+    height: 25%;
+    width: 100%;
+}
+
+.panel {
+    height: 100%;
+    background: gray;
+    padding: 0;
+    margin: 0;
+    border: 1px solid black;
+}
+
+.spin {
+    animation-name: spinner;
+    animation-timing-function: linear;
+    animation-iteration-count: 2;
+    animation-duration: 0.5s;
+    transform-style: preserve-3d;
+    animation-delay: 0s;
+}
+
+@keyframes spinner {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
 }
 
 @keyframes scroll {
@@ -268,13 +303,10 @@ body {
 
 /*About Me Page Contents*/
 
-#about-me-body {
-    background: url('http://interfacelift.com/wallpaper/De88aa64/04041_mountrainier_1920x1080.jpg');
-}
-
 svg {
+    padding: 0 0 3% 0;
     width: 100%;
-    height: 10vh;
+    height: 15vh;
     margin: 5% 0;
 }
 
@@ -290,28 +322,45 @@ svg path {
     animation: dash 5s linear forwards;
 }
 
-@-webkit-keyframes dash {
-    to {
-        stroke-dashoffset: 0;
-    }
-}
-@keyframes dash {
-    to {
-        stroke-dashoffset: 0;
-    }
-}
-
 .about-me-row-1 {
+    position: relative;
+    top: 7%;
     width: 100%;
-    height: 75vh;
+    height: 93%;
+}
+
+.about-me-row-2,
+.about-me-row-3,
+.about-me-row-4 {
+    position: relative;
+    top: 7%;
+    width: 100%;
+    height: 50%;
     border: 1px solid black;
 }
 
-.about-me-row-2 div,
-.about-me-row-3 div,
-.about-me-row-4 div {
-    height: 50vh;
+.about_me_text {
+    padding: 3% 10% 0 10%;
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.skill {
+    height: 100%;
     border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.skill_test {
+    height: 50%;
+    width: 100%;
+    padding: 2%;
+    margin: 0;
+}
+
+.badgeHolder {
+    height: 50%;
+    width: 50%;
 }
 
 /*Contacts Page Content*/
@@ -351,6 +400,21 @@ svg path {
     margin-top: 2%;
 }
 
+@keyframes spin {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+@-webkit-keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
 @media screen and (max-width: 627px) {
     #navbar {
         font-size: 0.7em;
@@ -381,5 +445,20 @@ svg path {
     .projectTextContainer {
         height: 85%;
         overflow: hidden;
+    }
+
+    .projectText {
+        font-size: 0.7em;
+    }
+
+    .wheatley_container {
+        display: none;
+    }
+
+    .wheatley {
+        height: 20vh;
+        width: 35vw;
+        animation: spin 7s linear infinite;
+        display: none;
     }
 }
