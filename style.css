@@ -96,10 +96,10 @@ body {
 /*Projects CSS*/
 #work_page {
     position: fixed;
-    overflow-y: scroll;
+    overflow: hidden;
 }
 
-#work_page .navbar li {
+#work_page #navbar li {
     color: #ffffff;
 }
 
@@ -134,6 +134,7 @@ body {
     text-align: center;
     font-family: 'Roboto', sans-serif;
     position: relative;
+    color: #ffffff;
     top: 20%;
     left: 45%;
     transform: translate(-45%,-45%);
@@ -145,7 +146,7 @@ body {
 .line {
     height: 5vh;
     width: 3px;
-    border-left: 3px solid black;
+    border-left: 3px solid #ffffff;
     position: relative;
     top: 18%;
     left: 50%;
@@ -153,12 +154,15 @@ body {
     padding: 0;
 }
 
-.selectProject {
-    color: #ffffff;
+.projectTitle h1 {
+    font-size: 2em;
+    text-shadow: #ECECEC;
 }
 
 .selectProject h1 {
     font-size: 4em;
+    color: #FFFFFF;
+    text-shadow: #1b2735;
 }
 
 /*.wheatley_container {*/
@@ -175,50 +179,109 @@ body {
 
 
 #projectOne {
-    background: linear-gradient(rgba(255,255,255,.20),rgba(255,255,255,.20)), url('./images/mountain.jpg');
+    background: linear-gradient(rgba(255,255,255,.10),rgba(255,255,255,.10)), url('./images/decider-work-2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#projectOne:hover {
+    background: linear-gradient(rgba(0,0,0,.40),rgba(0,0,0,.40)), url('./images/decider-work-2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
 #projectTwo {
-    background: linear-gradient(rgba(255,255,255,.20),rgba(255,255,255,.20)), url('./images/space.jpg');
+    background: linear-gradient(rgba(255,255,255,.10),rgba(255,255,255,.10)), url('./images/panels-work.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#projectTwo:hover {
+    background: linear-gradient(rgba(0,0,0,.40),rgba(0,0,0,.40)), url('./images/panels-work.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
 #projectThree {
-    background: linear-gradient(rgba(255,255,255,.20),rgba(255,255,255,.20)), url('./images/snow.jpg');
+    background: linear-gradient(rgba(255,255,255,.10),rgba(255,255,255,.10)), url('./images/moments-work.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#projectThree:hover {
+    background: linear-gradient(rgba(0,0,0,.40),rgba(0,0,0,.40)), url('./images/moments-work.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
 #projectFour {
-    background: linear-gradient(rgba(255,255,255,.20),rgba(255,255,255,.20)), url('./images/waterfall.jpg');
+    background: linear-gradient(rgba(0,0,0,.10),rgba(0,0,0,.10)), url('./images/math-work.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#projectFour:hover {
+    background: linear-gradient(rgba(0,0,0,.40),rgba(0,0,0,40)), url('./images/math-work.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
 #projectFive {
-    background: linear-gradient(rgba(255,255,255,.20),rgba(255,255,255,.20)), url('./images/cosmos.jpg');
+    background: linear-gradient(rgba(255,255,255,.10),rgba(255,255,255,.10)), url('./images/students-work.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+}
+
+#projectFive:hover {
+    background: linear-gradient(rgba(0,0,0,.40),rgba(0,0,0,.40)), url('./images/students-work.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+#projectInformationOne {
+    background: radial-gradient(ellipse at bottom, #22313F 0%, #090a0f 100%);
 }
 
 #projectInformationTwo {
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
-    overflow: hidden;
 }
 
 #projectInformationThree {
-    background: url('./images/walk-the-moon-tickets_crop.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+    background: radial-gradient(ellipse at bottom, #2C3E50 0%, #090a0f 100%);
+}
+
+#projectInformationFour {
+    background: radial-gradient(ellipse at bottom, #674172 0%, #090a0f 100%);
+}
+
+#projectInformationFive {
+    background: radial-gradient(ellipse at bottom, #6C7A89 0%, #090a0f 100%);
+}
+
+.closer {
+    height: 5%;
+    width: 3%;
+    border: 2px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top:7%;
+    right: 1%;
+}
+
+.closer h1 {
+    margin: 0;
+    color: #ffffff;
+    text-align: center;
 }
 
 .small_star {
@@ -238,12 +301,12 @@ body {
 }
 
 .projectTextContainer {
-    height: 75%;
-    width: 80%;
+    height: 55%;
+    width: 60%;
     position: relative;
-    top: 45%;
-    left: 45%;
-    transform: translate(-45%,-45%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     background: linear-gradient(rgba(0,0,0,.40),rgba(0,0,0,.40));
     padding: 0 5%;
     border: 1px solid white;
@@ -272,6 +335,14 @@ body {
     padding: 0;
     margin: 0;
     border: 1px solid black;
+}
+
+.spin_short {
+    animation-name: spin;
+    animation-iteration-count: 4;
+    animation-duration: 1s;
+    transform-style: preserve-3d;
+    animation-delay: 0s;
 }
 
 .spin {
