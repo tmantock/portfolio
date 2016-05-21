@@ -340,7 +340,7 @@ body {
 .spin_short {
     animation-name: spin;
     animation-iteration-count: 4;
-    animation-duration: 1s;
+    animation-duration: 1.3s;
     transform-style: preserve-3d;
     animation-delay: 0s;
 }
@@ -374,11 +374,11 @@ body {
 
 /*About Me Page Contents*/
 
-svg {
+#Layer_1 {
     padding: 0 0 3% 0;
     width: 100%;
-    height: 15vh;
-    margin: 5% 0;
+    height: 15%;
+    margin: 5% 0 0 0;
 }
 
 svg path {
@@ -407,7 +407,6 @@ svg path {
     top: 7%;
     width: 100%;
     height: 50%;
-    border: 1px solid black;
 }
 
 .about_me_text {
@@ -418,20 +417,116 @@ svg path {
 
 .skill {
     height: 100%;
-    border: 1px solid black;
-    box-sizing: border-box;
+    border: none;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
 }
 
-.skill_test {
+.caption h1 {
+    text-align: center;
+    margin-top: 2%;
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    transform: translateY(100%);
+    transition-duration: .6s;
+}
+
+.skill_text {
     height: 50%;
     width: 100%;
-    padding: 2%;
+    padding: 5%;
     margin: 0;
 }
 
 .badgeHolder {
-    height: 50%;
-    width: 50%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 70%;
+    width: 70%;
+    margin: 0;
+    padding: 0;
+}
+
+.mySQl .badgeHolder {
+    width: 83%;
+}
+
+.badgeHolder img {
+    height: 100%;
+    width: 100%;
+}
+
+.html {
+    background: #446CB3;
+}
+
+.html_c {
+    background: #5C97BF;
+}
+
+.css3 {
+    background: #F2784B;
+}
+
+.css_c {
+    background: #F4B350;
+}
+
+.bootstrap {
+    background: #6C7A89;
+}
+
+.bootstrap_c {
+    background: #BDC3C7;
+}
+
+.javascript {
+    background: #EF4836;
+}
+.js_c {
+    background: #EC644B;
+}
+
+.angular {
+    background: #6C7A89;
+}
+
+.angular_c {
+    background: #ECECEC;
+}
+
+.php {
+    background: #913D88;
+}
+
+.php_c {
+    background: #BE90D4;
+}
+
+.mySQl {
+    background: #BFBFBF;
+}
+
+.sql_c {
+    background: #ECF0F1;
+}
+
+.github {
+    background: #F4D03F;
+}
+
+.git_c {
+    background: #F5D76E;
+}
+
+.skill:hover .caption{
+    transform: translateY(0%);
 }
 
 /*Contacts Page Content*/
