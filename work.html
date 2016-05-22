@@ -35,8 +35,14 @@
         </div>
     </nav>
     <div class = 'list_container'>
+        <div class = 'listBox'>
+            <div class = 'arrowContainer'>
+                <i class="material-icons upArrow" data-position = '1' onclick="listUp(this)">keyboard_arrow_up</i>
+                <i class="material-icons downArrow" data-position = '2' onclick="listDown(this)">keyboard_arrow_down</i>
+            </div>
+        </div>
         <div class = 'project_list'>
-            <div class = 'projectTitle selectProject' data-project = 'projectOne' data-information="projectInformationOne" onclick = 'pageScroll(this)'><h1>Decider</h1></div>
+            <div class = 'selectProject' data-project = 'projectOne' data-information="projectInformationOne" onclick = 'pageScroll(this)'><h1>Decider</h1></div>
             <div class = 'projectTitle' data-project = 'projectTwo' data-information="projectInformationTwo" onclick = 'pageScroll(this)'><h1>Panels</h1></div>
             <div class = 'projectTitle' data-project = 'projectThree' data-information="projectInformationThree" onclick = 'pageScroll(this)'><h1>Moments</h1></div>
             <div class = 'projectTitle' data-project = 'projectFour' data-information="projectInformationFour" onclick = 'pageScroll(this)'><h1>Calculator</h1></div>

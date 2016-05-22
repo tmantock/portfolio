@@ -60,43 +60,70 @@ body {
     width: 0;
 }
 
-.project_list{
-    height: 100%;
+.listBox{
+    height: 10%;
     width: 47%;
     position: absolute;
+    top: 50%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%,-50%);
     margin: 0;
     padding: 0;
     z-index: +5;
-    background: none;
+    border: 3px solid #ffffff;
+    box-sizing: border-box;
+}
+
+.arrowContainer {
+    float: right;
+    color: #ffffff;
+    height: 100%;
+    width: 5%;
+}
+
+.arrowContainer i {
+    width: 100%;
+    height: 50%;
+    font-weight: 800;
+}
+
+.project_list{
+    position: absolute;
+    top:45%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: +1;
 }
 
 .projectTitle {
-    width: 100%;
+    width: 47vw;
+    height: 10vh;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     position: relative;
+    border: 3px solid transparent;
+    box-sizing: border-box;
     color: #ffffff;
-    top: 20%;
-    left: 45%;
-    transform: translate(-45%,-45%);
-    margin: 0;
-    padding: 0;
-
+   visibility: hidden;
 }
+
+.selectProject {
+    width: 47vw;
+    height: 10vh;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    position: relative;
+    border: 3px solid transparent;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+
 
 .projectTitle h1 {
-    margin: 0% 0 15% 0;
+    position: relative;
+    margin: 20px 20px;
     font-size: 2em;
     text-shadow: #ECECEC;
-}
-
-.selectProject h1 {
-    margin: 0% 0 15% 0;
-    font-size: 2.8em;
-    color: #FFFFFF;
-    text-shadow: #1b2735;
 }
 
 #projectOne {
@@ -240,45 +267,6 @@ body {
 
 .projectText {
     font-size: 1.2em;
-}
-
-.panelRow {
-    height: 25%;
-    width: 100%;
-}
-
-.panel {
-    height: 100%;
-    background: gray;
-    padding: 0;
-    margin: 0;
-    border: 1px solid black;
-}
-
-.spin_short {
-    animation-name: spin;
-    animation-iteration-count: 4;
-    animation-duration: 1.3s;
-    transform-style: preserve-3d;
-    animation-delay: 0s;
-}
-
-.spin {
-    animation-name: spinner;
-    animation-timing-function: linear;
-    animation-iteration-count: 2;
-    animation-duration: 0.5s;
-    transform-style: preserve-3d;
-    animation-delay: 0s;
-}
-
-@keyframes spinner {
-    from {
-        transform: rotateY(0deg);
-    }
-    to {
-        transform: rotateY(360deg);
-    }
 }
 
 @keyframes scroll {
