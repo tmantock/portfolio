@@ -6,19 +6,13 @@ body {
 }
 /*Navigation Bar*/
 #navbar {
-    width: 100%;
     margin: 0;
     padding: 0;
     background: #424242;
-    z-index: +7;
-}
-.container {
-    width: 100%;
 }
 
 #navbar ul {
     text-align: center;
-    width: 50%;
 }
 
 .nav.navbar-nav.navbar-right a {
@@ -39,9 +33,6 @@ body {
     text-decoration: #000000;
 }
 
-.container {
-    height: 100%;
-}
 /*Projects CSS*/
 #work_page {
     overflow: hidden;
@@ -69,7 +60,7 @@ body {
     transform: translate(-50%,-50%);
     margin: 0;
     padding: 0;
-    z-index: +5;
+    z-index: +1;
     border: 3px solid #ffffff;
     box-sizing: border-box;
 }
@@ -79,6 +70,8 @@ body {
     color: #ffffff;
     height: 100%;
     width: 5%;
+    margin-right: 3%;
+    z-index: +4;
 }
 
 .arrowContainer i {
@@ -92,11 +85,11 @@ body {
     top:45%;
     left: 50%;
     transform: translateX(-50%);
-    z-index: +1;
+    z-index: +2;
 }
 
 .projectTitle {
-    width: 47vw;
+    width: 40vw;
     height: 10vh;
     text-align: center;
     font-family: 'Roboto', sans-serif;
@@ -108,7 +101,7 @@ body {
 }
 
 .selectProject {
-    width: 47vw;
+    width: 40vw;
     height: 10vh;
     text-align: center;
     font-family: 'Roboto', sans-serif;
@@ -520,16 +513,20 @@ svg path {
         width: 90vw;
     }
 
+    .listBox {
+        width: 90%;
+    }
+
+    .project_list {
+        top: 42.5%;
+    }
+
     .selectProject h1 {
         font-size: 3.6em;
     }
 
     .projectTitle h1 {
         font-size: 2.7em;
-    }
-
-    .line {
-        height: 3%;
     }
 
     .projectTextContainer {

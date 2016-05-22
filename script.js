@@ -1,3 +1,5 @@
+var arrowClick = true;
+
 $(document).ready(function (){
     $('.projectImageContainer').on('click', function () {
         var info = $(this).attr('data-information');
@@ -48,10 +50,13 @@ function pageScroll (element) {
 
 function listUp (element) {
     var position = $(element).attr('data-position');
-    if(position == '1') {
+    if (position == '1') {
         return;
     }
-    else {
+    if (arrowClick === true) {
+
+        arrowClick = false;
+
         var upCount = parseInt(position);
         upCount--;
         var prevChild = '.project_list div:nth-child(' + upCount + ')';
@@ -60,11 +65,16 @@ function listUp (element) {
         var height = target.height();
         var listPosition = $('.project_list').position().top;
         $('.selectProject').addClass('projectTitle').removeClass('selectProject');
-        $('.project_list').animate({top:(height + listPosition) + downCount * 2 + 'px'},300);
-        $(prevChild).addClass('selectProject').removeClass('projectTitle');
-        $(element).attr('data-position',upCount);
-        $('.downArrow').attr('data-position',downCount);
+        $('.project_list').animate({top: (height + listPosition) + downCount * 2 + 'px'}, 300, function () {
+            $(prevChild).addClass('selectProject').removeClass('projectTitle');
+            $(element).attr('data-position', upCount);
+            $('.downArrow').attr('data-position', downCount);
+            arrowClick = true;
+        });
+        $('.selectProject').addClass('projectTitle').removeClass('selectProject');
+
     }
+
 }
 
 function listDown (element) {
@@ -72,7 +82,10 @@ function listDown (element) {
     if(position == '6') {
         return;
     }
-    else {
+    if (arrowClick === true) {
+
+        arrowClick = false;
+
         var downCount = parseInt(position);
         var nextChild = '.project_list div:nth-child(' + downCount + ')';
         downCount++;
@@ -80,11 +93,14 @@ function listDown (element) {
         var target = $('.selectProject');
         var height = target.height();
         var listPosition = $('.project_list').position().top;
-        $('.project_list').animate({top:(height * -1) + listPosition - upCount * 2 + 'px'},300);
+        $('.project_list').animate({top:(height * -1) + listPosition - upCount * 2 + 'px'},300,function(){
+            $(nextChild).addClass('selectProject').removeClass('projectTitle');
+            $(element).attr('data-position',downCount);
+            $('.upArrow').attr('data-position',upCount);
+            arrowClick = true;
+        });
         $('.selectProject').addClass('projectTitle').removeClass('selectProject');
-        $(nextChild).addClass('selectProject').removeClass('projectTitle');
-        $(element).attr('data-position',downCount);
-        $('.upArrow').attr('data-position',upCount);
+
     }
 }
 
