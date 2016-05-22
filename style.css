@@ -1,3 +1,7 @@
+#work_html {
+    overflow: hidden;
+}
+
 body {
     max-width: 2000px;
     height: 100vh;
@@ -37,6 +41,7 @@ body {
 #work_page {
     overflow: hidden;
 }
+
 .projectContainer,
 .projectImageContainer,
 .projectInformation {
