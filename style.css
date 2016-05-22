@@ -2,7 +2,7 @@ body {
     max-width: 2000px;
     height: 100vh;
     width: 100vw;
-    background-color: #f8f8f8;
+    background-color: #9E9E9E;
 }
 /*Navigation Bar*/
 #navbar {
@@ -10,23 +10,18 @@ body {
     height: 7%;
     margin: 0;
     padding: 0;
-    background: linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.25));
+    background: #424242;
     z-index: +7;
 }
 
 #navbar ul {
-    position: relative;
-    top:45%;
-    transform: translateY(-45%);
     text-align: center;
-    margin: 0;
-    padding: 0;
+    width: 30%;
 }
 
-#navbar a {
+.nav.navbar-nav.navbar-right a {
     display: inline-block;
-    position: relative;
-    margin: 0 5%;
+    padding: 15px 15px;
     text-decoration: none;
 }
 
@@ -34,75 +29,21 @@ body {
     list-style-type: none;
     text-transform: uppercase;
     font-family: 'Raleway', sans-serif;
-    color: #000000;
 }
 
-#work_page #navbar li {
-    color: #ffffff;
+
+.nav.navbar-nav.navbar-right a:hover {
+    background: #eee;
+    text-decoration: #000000;
 }
 
-.col-md-12 {
-    margin: 0;
-    padding: 0;
-}
-
-.circleContainer {
-    position: absolute;
-    top: -50%;
-    right: 49%;
-    width: 45px;
-    height:45px;
-    display: inline-block;
-}
-
-.circle {
-    position: absolute;
-    width: 90%;
-    height: 90%;
-    background: #EEEEEE;
-    border-radius: 50%;
-    top: 45%;
-    left: 45%;
-    transform: translate(-45%,-45%);
-    font-family: 'Kalam', cursive;
-    font-weight: 300;
-    margin: 0 0 0 0;
-    padding: 0;
-}
-
-.loader {
-    width: 100%;
+.container {
     height: 100%;
-    background: transparent;
-    border-radius: 50%;
-    border: 5px solid transparent;
-    border-top: 3px solid #2C3E50;
-    border-bottom: 3px solid #2C3E50;
-    animation: spin 4s linear infinite;
-    position: absolute;
-    margin: 0;
-    padding: 0;
 }
-
-.circle h1 {
-    font-family: 'Courgette', cursive;
-    font-size: 1em;
-    position: relative;
-    font-weight: 800;
-    bottom: 25%;
-    color: #000000;
-}
-
 /*Projects CSS*/
 #work_page {
-    position: fixed;
     overflow: hidden;
 }
-
-#work_page #navbar li {
-    color: #ffffff;
-}
-
 .projectContainer,
 .projectImageContainer,
 .projectInformation {
@@ -119,7 +60,7 @@ body {
 
 .project_list{
     height: 100%;
-    width: 40vw;
+    width: 40%;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -144,8 +85,8 @@ body {
 }
 
 .line {
-    height: 5vh;
-    width: 3px;
+    height: 5%;
+    width: 3%;
     border-left: 3px solid #ffffff;
     position: relative;
     top: 18%;
@@ -155,28 +96,17 @@ body {
 }
 
 .projectTitle h1 {
+    margin: 2%;
     font-size: 2em;
     text-shadow: #ECECEC;
 }
 
 .selectProject h1 {
+    margin: 0;
     font-size: 4em;
     color: #FFFFFF;
     text-shadow: #1b2735;
 }
-
-/*.wheatley_container {*/
-    /*position: absolute;*/
-    /*height: 20vh;*/
-    /*width: 10vw;*/
-/*}*/
-
-/*.wheatley {*/
-    /*height: 20vh;*/
-    /*width: 10vw;*/
-    /*animation: spin 6s linear infinite;*/
-/*}*/
-
 
 #projectOne {
     background: linear-gradient(rgba(255,255,255,.10),rgba(255,255,255,.10)), url('./images/decider-work-2.jpg');
@@ -268,22 +198,12 @@ body {
     background: radial-gradient(ellipse at bottom, #6C7A89 0%, #090a0f 100%);
 }
 
-.closer {
-    height: 5%;
-    width: 3%;
-    border: 2px solid white;
-    border-radius: 50%;
+.btn.btn-fab, .input-group-btn .btn.btn-fab{
     position: absolute;
     top:7%;
     right: 1%;
+    display: none;
 }
-
-.closer h1 {
-    margin: 0;
-    color: #ffffff;
-    text-align: center;
-}
-
 .small_star {
     position: absolute;
     height: 1px;
@@ -394,25 +314,36 @@ svg path {
 }
 
 .about-me-row-1 {
-    position: relative;
-    top: 7%;
     width: 100%;
-    height: 93%;
+    height: 100%;
+}
+
+.personal_image,
+.about_me_description {
+    height: 100%;
+    padding: 0;
 }
 
 .about-me-row-2,
 .about-me-row-3,
 .about-me-row-4 {
-    position: relative;
-    top: 7%;
     width: 100%;
     height: 50%;
 }
 
 .about_me_text {
-    padding: 3% 10% 0 10%;
+    padding: 10% 10% 0 10%;
     font-size: 2em;
     font-weight: 300;
+}
+
+.skills_divider {
+    height: 10%;
+    width: 100%;
+    border: 3px solid rgba(0,0,0,.3);
+    border-left: none;
+    border-right: none;
+    text-align: center;
 }
 
 .skill {
@@ -608,6 +539,10 @@ svg path {
         font-size: 2.7em;
     }
 
+    .line {
+        height: 3%;
+    }
+
     .projectTextContainer {
         height: 85%;
         overflow: hidden;
@@ -617,14 +552,33 @@ svg path {
         font-size: 0.7em;
     }
 
-    .wheatley_container {
-        display: none;
+}
+
+@media screen and (max-width: 667px) {
+
+    .selectProject h1 {
+        font-size: 3.6em;
     }
 
-    .wheatley {
-        height: 20vh;
-        width: 35vw;
-        animation: spin 7s linear infinite;
-        display: none;
+    .project_list {
+        width: 55%;
+    }
+
+    .projectTitle h1 {
+        font-size: 2.7em;
+        margin: 1%;
+    }
+
+    .line {
+        top: 15%;
+    }
+
+    .skills_divider {
+        height: 20%;
+    }
+
+    .badgeHolder {
+        height: 70%;
+        width: 30%;
     }
 }
