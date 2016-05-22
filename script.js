@@ -29,7 +29,13 @@ $(document).ready(function (){
             $('.btn.btn-fab, .input-group-btn .btn.btn-fab').css('display','none')
         });
     });
+
+    isMobile();
 });
+
+function isMobile() {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+}
 
 function pageScroll (element) {
     var project = $(element).attr('data-project');
@@ -116,17 +122,20 @@ function randomPosition(id){
 }
 
 function starScroll (id) {
-    var starSmall;
-    var starBig;
 
-    for(i=0;i<40;i++) {
-        var newPosition = randomPosition(id);
-        starBig = $('<div>').addClass('big_star').css({top:newPosition[0],left: newPosition[1]});
-        $(id).append(starBig);
-        for(x=0;x<20;x++) {
+    if(!isMobile()) {
+        var starSmall;
+        var starBig;
+
+        for (i = 0; i < 40; i++) {
             var newPosition = randomPosition(id);
-            starSmall = $('<div>').addClass('small_star').css({top:newPosition[0],left: newPosition[1]});
-            $(id).append(starSmall);
+            starBig = $('<div>').addClass('big_star').css({top: newPosition[0], left: newPosition[1]});
+            $(id).append(starBig);
+            for (x = 0; x < 20; x++) {
+                var newPosition = randomPosition(id);
+                starSmall = $('<div>').addClass('small_star').css({top: newPosition[0], left: newPosition[1]});
+                $(id).append(starSmall);
+            }
         }
     }
 }
