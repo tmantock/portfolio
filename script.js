@@ -7,7 +7,7 @@ $(document).ready(function (){
         var infoPosition =  $(id).position().top;
         $('.projectContainer').animate({top:(infoPosition) * -1 +'px'},700, function () {
             $('.btn.btn-fab, .input-group-btn .btn.btn-fab').css('display','block');
-            $('.projectTextContainer').css('display','block');
+            $('.projectInformationContainer').css('display','block');
         });
         setTimeout(function () {
             starScroll(id);
@@ -18,7 +18,7 @@ $(document).ready(function (){
         var info = $(this).attr('data-project');
         var id = '#' + info;
         var projectPosition = $(id).position().top;
-        $('.projectTextContainer').css('display','none');
+        $('.projectInformationContainer').css('display','none');
         $('.small_star').remove();
         $('.big_star').remove();
         $('.projectContainer').animate({top:(projectPosition) * -1 + 'px'},1300, function () {
