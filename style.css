@@ -511,7 +511,7 @@ svg path {
 
 @media screen and (max-width: 627px) {
     #navbar {
-        font-size: 0.7em;
+        font-size: 1em;
     }
 
     .circleContainer {
@@ -534,6 +534,7 @@ svg path {
 
     .project_list {
         top: 42.5%;
+        width: 40%;
     }
 
     .selectProject h1 {
@@ -553,33 +554,21 @@ svg path {
         font-size: 0.7em;
     }
 
-}
-
-@media screen and (max-width: 667px) {
-
-    .selectProject h1 {
-        font-size: 3.6em;
-    }
-
-    .project_list {
-        width: 55%;
-    }
-
-    .projectTitle h1 {
-        font-size: 2.7em;
-        margin: 1%;
-    }
-
-    .line {
-        top: 15%;
-    }
-
-    .skills_divider {
-        height: 20%;
-    }
-
     .badgeHolder {
-        height: 70%;
-        width: 30%;
+        width: 80%;
+    }
+
+    .about_me_text {
+        padding-top: 15%;
+    }
+
+    .contactContainer {
+        padding-top: 10%;
+    }
+
+    .contact-glyphs li a {
+        text-decoration: none;
+        padding: 0 20%;
     }
 }
+

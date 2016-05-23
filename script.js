@@ -39,17 +39,11 @@ function isMobile() {
     return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 }
 
-function pageScroll (element) {
-    var project = $(element).attr('data-project');
-    var information = $(element).attr('data-information');
-    var listItem = $('.projectTitle');
+function pageScroll () {
+    var project = $('.selectProject').attr('data-project');
+    var information = $('.selectProject').attr('data-information');
     var id = '#' + project;
     var projectPosition = $(id).position().top;
-
-    if(listItem.hasClass('selectProject')) {
-        listItem.removeClass('selectProject');
-    }
-    $(element).addClass('selectProject');
     $(id).attr('data-information',information);
     $('.projectContainer').animate({top:(projectPosition) * -1 + 'px'},1300);
 
@@ -77,6 +71,7 @@ function listUp (element) {
             $(prevChild).addClass('selectProject').removeClass('projectTitle');
             $(element).attr('data-position', upCount);
             $('.downArrow').attr('data-position', downCount);
+            pageScroll();
             arrowClick = true;
         });
         $('.selectProject').addClass('projectTitle').removeClass('selectProject');
@@ -105,6 +100,7 @@ function listDown (element) {
             $(nextChild).addClass('selectProject').removeClass('projectTitle');
             $(element).attr('data-position',downCount);
             $('.upArrow').attr('data-position',upCount);
+            pageScroll();
             arrowClick = true;
         });
         $('.selectProject').addClass('projectTitle').removeClass('selectProject');
