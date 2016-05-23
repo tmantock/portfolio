@@ -1,13 +1,13 @@
+html {
+    overflow: hidden;
+}
+
 body,
 #work_page {
     max-width: 2000px;
     height: 100vh;
     width: 100vw;
-    background-color: #9E9E9E;
-}
-
-#work_html {
-    overflow: hidden;
+    background-color: #FAFAFA;
 }
 
 #work_page {
@@ -48,8 +48,7 @@ body,
 /*Projects CSS*/
 
 .projectContainer,
-.projectImageContainer,
-.projectInformation {
+.projectImageContainer {
     position: relative;
     height: 100%;
     border: none;
@@ -81,7 +80,6 @@ body,
 .arrowContainer i {
     width: 100%;
     height: 50%;
-    padding: 15px 0;
     font-size: 2em;
     font-weight: 800;
 }
@@ -199,23 +197,23 @@ body,
 }
 
 #projectInformationOne {
-    background: radial-gradient(ellipse at bottom, #22313F 0%, #090a0f 100%);
+    background: radial-gradient(ellipse at center, #22313F 0%, #090a0f 100%);
 }
 
 #projectInformationTwo {
-    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    background: radial-gradient(ellipse at center, #1b2735 0%, #090a0f 100%);
 }
 
 #projectInformationThree {
-    background: radial-gradient(ellipse at bottom, #2C3E50 0%, #090a0f 100%);
+    background: radial-gradient(ellipse at center, #2C3E50 0%, #090a0f 100%);
 }
 
 #projectInformationFour {
-    background: radial-gradient(ellipse at bottom, #674172 0%, #090a0f 100%);
+    background: radial-gradient(ellipse at center, #674172 0%, #090a0f 100%);
 }
 
 #projectInformationFive {
-    background: radial-gradient(ellipse at bottom, #6C7A89 0%, #090a0f 100%);
+    background: radial-gradient(ellipse at center, #6C7A89 0%, #090a0f 100%);
 }
 
 .btn.btn-fab, .input-group-btn .btn.btn-fab{
@@ -224,6 +222,7 @@ body,
     right: 1%;
     display: none;
 }
+
 .small_star {
     position: absolute;
     height: 1px;
@@ -238,6 +237,12 @@ body,
     width: 3px;
     background: #ffffff;
     animation: scroll 75s linear infinite;
+}
+
+.projectInformation {
+    position: relative;
+    border: none;
+    height: 0;
 }
 
 .projectInformationContainer {
@@ -384,19 +389,19 @@ svg path {
     width: 100%;
 }
 
-.html {
+.css3 {
     background: #446CB3;
 }
 
-.html_c {
+.css_c {
     background: #5C97BF;
 }
 
-.css3 {
+.html {
     background: #F2784B;
 }
 
-.css_c {
+.html_c {
     background: #F4B350;
 }
 
@@ -408,18 +413,18 @@ svg path {
     background: #BDC3C7;
 }
 
-.javascript {
+.angular {
     background: #EF4836;
 }
-.js_c {
+.angular_c {
     background: #EC644B;
 }
 
-.angular {
+.github {
     background: #6C7A89;
 }
 
-.angular_c {
+.git_c {
     background: #ECECEC;
 }
 
@@ -432,18 +437,18 @@ svg path {
 }
 
 .mySQl {
-    background: #BFBFBF;
+    background: #F4B350;
 }
 
 .sql_c {
-    background: #ECF0F1;
+    background: #F27935;
 }
 
-.github {
+.javascript {
     background: #F4D03F;
 }
 
-.git_c {
+.js_c {
     background: #F5D76E;
 }
 
@@ -453,6 +458,7 @@ svg path {
 
 /*Contacts Page Content*/
 .contactContainer {
+    padding-top: 7%;
     text-align: center;
     font-family: 'Raleway', sans-serif;
 }
@@ -475,7 +481,7 @@ svg path {
 
 .contact-glyphs li a{
     text-decoration: none;
-    padding: 0 50%;
+    padding: 0 30%;
     font-size: 2.5em;
     position: relative;
     color: black;

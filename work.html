@@ -169,5 +169,29 @@
     </div>
     <script src="https://cdn.jsdelivr.net/bootstrap.material-design/0.5.9/js/ripples.min.js"></script>
     <script src="https://cdn.jsdelivr.net/bootstrap.material-design/0.5.9/js/material.min.js"></script>
+    <script>
+        $.material.ripples(".btn ");
+        $(function () {
+            $.material.init();
+            $(".shor").noUiSlider({
+                start: 40,
+                connect: "lower",
+                range: {
+                    min: 0,
+                    max: 100
+                }
+            });
+
+            $(".svert").noUiSlider({
+                orientation: "vertical",
+                start: 40,
+                connect: "lower",
+                range: {
+                    min: 0,
+                    max: 100
+                }
+            });
+        });
+    </script>
 </body>
 </html>
