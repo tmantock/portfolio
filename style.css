@@ -62,10 +62,9 @@ body,
     left: 50%;
     transform: translate(-50%,-50%);
     margin: 0;
-    padding: 0;
-    z-index: +1;
     border: 3px solid #ffffff;
     box-sizing: border-box;
+    z-index: +2;
 }
 
 .arrowContainer {
@@ -74,7 +73,6 @@ body,
     height: 100%;
     width: 5%;
     margin-right: 3%;
-    z-index: +4;
 }
 
 .arrowContainer i {
@@ -89,11 +87,11 @@ body,
     top:45%;
     left: 50%;
     transform: translateX(-50%);
-    z-index: +2;
+    z-index: +1;
 }
 
 .projectTitle {
-    width: 40vw;
+    width: 47vw;
     height: 10vh;
     text-align: center;
     font-family: 'Roboto', sans-serif;
@@ -105,7 +103,7 @@ body,
 }
 
 .selectProject {
-    width: 40vw;
+    width: 47vw;
     height: 10vh;
     text-align: center;
     font-family: 'Roboto', sans-serif;
@@ -534,7 +532,10 @@ svg path {
 
     .project_list {
         top: 42.5%;
-        width: 40%;
+    }
+
+    .selectProject {
+        width: 90vw;
     }
 
     .selectProject h1 {
