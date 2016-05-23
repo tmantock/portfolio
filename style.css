@@ -19,7 +19,7 @@ body,
     width: 100vw;
     margin: 0;
     padding: 0;
-    background-color: rgba(66,66,66,.40);
+    background-color: rgba(66,66,66,.90);
 }
 
 #navbar ul {
@@ -80,6 +80,7 @@ body,
     height: 50%;
     font-size: 2em;
     font-weight: 800;
+    line-height: 1.5em;
 }
 
 .project_list{
@@ -114,6 +115,7 @@ body,
 }
 
 .selectProject h1 {
+    line-height: 2em;
     margin-top: 10px;
 }
 
@@ -543,11 +545,15 @@ svg path {
     }
 
     .selectProject h1 {
-        font-size: 3.6em;
+        font-size: 2em;
     }
 
     .projectTitle h1 {
-        font-size: 2.7em;
+        font-size: 2em;
+    }
+
+    .arrowContainer i {
+        font-size: 1.7em;
     }
 
     .projectTextContainer {
@@ -574,6 +580,36 @@ svg path {
     .contact-glyphs li a {
         text-decoration: none;
         padding: 0 20%;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    /*.listBox {*/
+        /*height: 20%;*/
+        /*width: 80%;*/
+    /*}*/
+
+    /*.selectProject,*/
+    /*.projectTitle {*/
+        /*height: 20vh;*/
+        /*width: 80vw;*/
+    /*}*/
+
+    /*.project_list {*/
+        /*top: 38%;*/
+    /*}*/
+
+    .skills_divider{
+        height: 20%;
+    }
+    .badgeHolder{
+        width: 30%;
+    }
+    .mySQl img{
+        width: 70%;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }
 
