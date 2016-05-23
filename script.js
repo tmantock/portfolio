@@ -45,7 +45,7 @@ function pageScroll () {
     var id = '#' + project;
     var projectPosition = $(id).position().top;
     $(id).attr('data-information',information);
-    $('.projectContainer').animate({top:(projectPosition) * -1 + 'px'},1300);
+    $('.projectContainer').animate({top:(projectPosition) * -1 + 'px'},1000);
 
     $('.list_container').attr('data-information',information);
 }
@@ -67,7 +67,7 @@ function listUp (element) {
         var height = target.height();
         var listPosition = $('.project_list').position().top;
         $('.selectProject').addClass('projectTitle').removeClass('selectProject');
-        $('.project_list').animate({top: (height + listPosition) + downCount * 2 + 'px'}, 300, function () {
+        $('.project_list').animate({top: (height + listPosition) + downCount * 2 + 'px'}, 100, function () {
             $(prevChild).addClass('selectProject').removeClass('projectTitle');
             $(element).attr('data-position', upCount);
             $('.downArrow').attr('data-position', downCount);
@@ -96,7 +96,7 @@ function listDown (element) {
         var target = $('.selectProject');
         var height = target.height();
         var listPosition = $('.project_list').position().top;
-        $('.project_list').animate({top:(height * -1) + listPosition - upCount * 2 + 'px'},300,function(){
+        $('.project_list').animate({top:(height * -1) + listPosition - upCount * 2 + 'px'},100,function(){
             $(nextChild).addClass('selectProject').removeClass('projectTitle');
             $(element).attr('data-position',downCount);
             $('.upArrow').attr('data-position',upCount);
@@ -141,6 +141,7 @@ function starScroll (id) {
 function fontCheck () {
     if(isMobile()) {
         $('.sgt').html('SGT');
+        
     }
 }
 

@@ -19,7 +19,7 @@ body,
     width: 100vw;
     margin: 0;
     padding: 0;
-    background: #424242;
+    background-color: rgba(66,66,66,.40);
 }
 
 #navbar ul {
@@ -35,13 +35,13 @@ body,
     list-style-type: none;
     text-transform: uppercase;
     font-family: 'Raleway', sans-serif;
-    color: #009688;
+    color: #ffffff;
     display: inline-block;
 }
 
 
 .nav.navbar-nav.navbar-right a:hover {
-    background: #eee;
+    background: #009688;
     text-decoration: #000000;
 }
 
@@ -113,8 +113,12 @@ body,
     color: #ffffff;
 }
 
-.sgt {
-    margin-top: 25px;
+.selectProject h1 {
+    margin-top: 10px;
+}
+
+#sgt {
+    margin-top: 15px;
 }
 
 .projectTitle h1 {
@@ -125,7 +129,7 @@ body,
 }
 
 #projectOne {
-    background: linear-gradient(rgba(255,255,255,.10),rgba(255,255,255,.10)), url('./images/decider-work-2.jpg');
+    background: linear-gradient(rgba(0,0,0,.10),rgba(0,0,0,.10)), url('./images/decider-work-2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -139,7 +143,7 @@ body,
 }
 
 #projectTwo {
-    background: linear-gradient(rgba(255,255,255,.10),rgba(255,255,255,.10)), url('./images/panels-work.jpg');
+    background: linear-gradient(rgba(0,0,0,.10),rgba(0,0,0,.10)), url('./images/panels-work.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -153,7 +157,7 @@ body,
 }
 
 #projectThree {
-    background: linear-gradient(rgba(255,255,255,.10),rgba(255,255,255,.10)), url('./images/moments-work.jpg');
+    background: linear-gradient(rgba(0,0,0,.10),rgba(0,0,0,.10)), url('./images/moments-work.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -181,7 +185,7 @@ body,
 }
 
 #projectFive {
-    background: linear-gradient(rgba(255,255,255,.10),rgba(255,255,255,.10)), url('./images/students-work.jpg');
+    background: linear-gradient(rgba(0,0,0,.10),rgba(0,0,0,.10)), url('./images/students-work.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -531,7 +535,7 @@ svg path {
     }
 
     .project_list {
-        top: 42.5%;
+        top: 45%;
     }
 
     .selectProject {
@@ -556,7 +560,7 @@ svg path {
     }
 
     .badgeHolder {
-        width: 80%;
+        width: 70%;
     }
 
     .about_me_text {
