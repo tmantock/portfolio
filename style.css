@@ -1,15 +1,22 @@
-#work_html {
-    overflow: hidden;
-}
-
-body {
+body,
+#work_page {
     max-width: 2000px;
     height: 100vh;
     width: 100vw;
     background-color: #9E9E9E;
 }
+
+#work_html {
+    overflow: hidden;
+}
+
+#work_page {
+    overflow: hidden;
+}
+
 /*Navigation Bar*/
 #navbar {
+    width: 100vw;
     margin: 0;
     padding: 0;
     background: #424242;
@@ -20,7 +27,6 @@ body {
 }
 
 .nav.navbar-nav.navbar-right a {
-    display: inline-block;
     padding: 20px 20px;
     text-decoration: none;
 }
@@ -29,6 +35,8 @@ body {
     list-style-type: none;
     text-transform: uppercase;
     font-family: 'Raleway', sans-serif;
+    color: #009688;
+    display: inline-block;
 }
 
 
@@ -38,9 +46,6 @@ body {
 }
 
 /*Projects CSS*/
-#work_page {
-    overflow: hidden;
-}
 
 .projectContainer,
 .projectImageContainer,
@@ -48,12 +53,6 @@ body {
     position: relative;
     height: 100%;
     border: none;
-}
-
-.projectInformation {
-    background: black;
-    height: 0;
-    width: 0;
 }
 
 .listBox{
@@ -82,6 +81,8 @@ body {
 .arrowContainer i {
     width: 100%;
     height: 50%;
+    padding: 15px 0;
+    font-size: 2em;
     font-weight: 800;
 }
 
@@ -116,6 +117,9 @@ body {
     color: #ffffff;
 }
 
+.sgt {
+    margin-top: 25px;
+}
 
 .projectTitle h1 {
     position: relative;
@@ -238,7 +242,7 @@ body {
 
 .projectInformationContainer {
     height: 75%;
-    width: 80%;
+    width: 90%;
     position: relative;
     top: 50%;
     left: 50%;

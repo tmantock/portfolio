@@ -31,6 +31,8 @@ $(document).ready(function (){
     });
 
     isMobile();
+
+    fontCheck();
 });
 
 function isMobile() {
@@ -137,6 +139,12 @@ function starScroll (id) {
                 $(id).append(starSmall);
             }
         }
+    }
+}
+
+function fontCheck () {
+    if(isMobile()) {
+        $('.sgt').html('SGT');
     }
 }
 

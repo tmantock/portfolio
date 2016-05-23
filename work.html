@@ -5,7 +5,7 @@
     <title>Tevin Mantock - Simple Web Design</title>
     <script src ="https://code.jquery.com/jquery-2.1.4.min.js"></script>
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Roboto:300,400,500,700">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/icon?family=Material+Icons">
     <!-- Bootstrap Material Design -->
@@ -20,6 +20,7 @@
     <link href = "https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel = "stylesheet" type = "text/css">
     <script src = 'script.js'></script>
 </head>
+
 <body id = "work_page">
 
     <nav id = 'navbar' class = "navbar navbar-warning navbar-fixed-top">
@@ -34,9 +35,9 @@
             </div>
             <div class = 'navbar-collapse collapse navbar-warning-collapse'>
                 <ul class = 'nav navbar-nav navbar-right'>
-                    <a href = "work.html"><li>Work</li></a>
-                    <a href = "about-me.html"><li>About Me</li></a>
-                    <a href = "contact.html"><li>Contact</li></a>
+                    <li><a href = "work.html">Work</a></li>
+                    <li><a href = "about-me.html">About Me</a></li>
+                    <li><a href = "contact.html">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -54,20 +55,20 @@
             <div class = 'projectTitle' data-project = 'projectTwo' data-information="projectInformationTwo" onclick = 'pageScroll(this)'><h1>Panels</h1></div>
             <div class = 'projectTitle' data-project = 'projectThree' data-information="projectInformationThree" onclick = 'pageScroll(this)'><h1>Moments</h1></div>
             <div class = 'projectTitle' data-project = 'projectFour' data-information="projectInformationFour" onclick = 'pageScroll(this)'><h1>Calculator</h1></div>
-            <div class = 'projectTitle' data-project = 'projectFive' data-information="projectInformationFive" onclick = 'pageScroll(this)'><h1>Student Grade Table</h1></div>
+            <div class = 'projectTitle' data-project = 'projectFive' data-information="projectInformationFive" onclick = 'pageScroll(this)'><h1 class = 'sgt'>Student Grade Table</h1></div>
         </div>
     </div>
+
     <div class = 'projectContainer'>
         <div class = 'projectImageContainer col-md-12' id = 'projectOne' data-information="projectInformationOne"></div>
         <div class = 'projectInformation col-md-12' id = 'projectInformationOne'>
             <h1 class = 'projectHeader'>Decider</h1>
             <button type = 'button' class = 'closer btn btn-fab btn-material-grey-200 opensource' data-project = 'projectOne'>
                 <i class="material-icons">highlight_off</i>
-                <div class = 'ripple-container'></div>
             </button>
             <div class = 'projectInformationContainer' id = 'decider'>
                 <div class = 'projectImage'></div>
-                <div class = 'btn-group btn-group-justified btn-group-raised modal_button_container'>
+                <div class = 'btn-group btn-group-justified btn-group-raised'>
 
                     <a  href = 'javascript:void(0)' class = 'btn '>See the Code
                         <div class = 'ripple-container'></div>
@@ -86,12 +87,10 @@
             <h1 class = 'projectHeader'>Panels</h1>
             <button type = 'button' class = 'closer btn btn-fab btn-material-grey-200 opensource' data-project = 'projectTwo'>
                 <i class="material-icons">highlight_off</i>
-                <div class = 'ripple-container'></div>
             </button>
             <div class = 'projectInformationContainer' id = 'panels'>
                 <div class = 'projectImage'></div>
-                <div class = 'btn-group btn-group-justified btn-group-raised modal_button_container'>
-
+                <div class = 'btn-group btn-group-justified btn-group-raised'>
                     <a  href = 'javascript:void(0)' class = 'btn '>See the Code
                         <div class = 'ripple-container'></div>
                     </a>
@@ -109,12 +108,10 @@
             <h1 class = 'projectHeader'>Moments</h1>
             <button type = 'button' class = 'closer btn btn-fab btn-material-grey-200 opensource' data-project = 'projectThree'>
                 <i class="material-icons">highlight_off</i>
-                <div class = 'ripple-container'></div>
             </button>
             <div class = 'projectInformationContainer' id = 'moments'>
                 <div class = 'projectImage'></div>
-                <div class = 'btn-group btn-group-justified btn-group-raised modal_button_container'>
-
+                <div class = 'btn-group btn-group-justified btn-group-raised'>
                     <a  href = 'javascript:void(0)' class = 'btn '>See the Code
                         <div class = 'ripple-container'></div>
                     </a>
@@ -132,12 +129,10 @@
             <h1 class = 'projectHeader'>Calculator</h1>
             <button type = 'button' class = 'closer btn btn-fab btn-material-grey-200 opensource' data-project = 'projectFour'>
                 <i class="material-icons">highlight_off</i>
-                <div class = 'ripple-container'></div>
             </button>
             <div class = 'projectInformationContainer' id = 'calculator'>
                 <div class = 'projectImage'></div>
-                <div class = 'btn-group btn-group-justified btn-group-raised modal_button_container'>
-
+                <div class = 'btn-group btn-group-justified btn-group-raised'>
                     <a  href = 'javascript:void(0)' class = 'btn '>See the Code
                         <div class = 'ripple-container'></div>
                     </a>
@@ -155,12 +150,10 @@
             <h1 class = 'projectHeader'>Student Grade Table</h1>
             <button type = 'button' class = 'closer btn btn-fab btn-material-grey-200 opensource' data-project = 'projectFive'>
                 <i class="material-icons">highlight_off</i>
-                <div class = 'ripple-container'></div>
             </button>
             <div class = 'projectInformationContainer' id = 'studentGradeTable'>
                 <div class = 'projectImage'></div>
                 <div class = 'btn-group btn-group-justified btn-group-raised modal_button_container'>
-
                     <a  href = 'javascript:void(0)' class = 'btn '>See the Code
                         <div class = 'ripple-container'></div>
                     </a>
