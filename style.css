@@ -115,11 +115,14 @@ body,
 }
 
 .selectProject h1 {
-    margin-top: 15px;
+    margin: 0;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 #sgt {
-    margin-top: 15px;
+
 }
 
 .projectTitle h1 {
@@ -543,16 +546,8 @@ svg path {
         width: 90vw;
     }
 
-    .selectProject h1 {
-        font-size: 2em;
-    }
-
-    .projectTitle h1 {
-        font-size: 2em;
-    }
-
     .arrowContainer i {
-        font-size: 1.7em;
+        font-size: 2em;
     }
 
     .projectTextContainer {
@@ -583,21 +578,9 @@ svg path {
 }
 
 @media screen and (max-width: 736px) {
-    /*.listBox {*/
-        /*height: 20%;*/
-        /*width: 80%;*/
-    /*}*/
-
-    /*.selectProject,*/
-    /*.projectTitle {*/
-        /*height: 20vh;*/
-        /*width: 80vw;*/
-    /*}*/
-
-    /*.project_list {*/
-        /*top: 38%;*/
-    /*}*/
-
+    .arrowContainer i {
+        font-size: 1.2em;
+    }
     .skills_divider{
         height: 20%;
     }

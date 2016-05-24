@@ -90,7 +90,7 @@ function starScroll (id) {
         var starSmall;
         var starBig;
 
-        for (i = 0; i < 40; i++) {
+        for (i = 0; i < 35; i++) {
             var newPosition = randomPosition(id);
             starBig = $('<div>').addClass('big_star').css({top: newPosition[0], left: newPosition[1]});
             $(id).append(starBig);
@@ -106,7 +106,6 @@ function starScroll (id) {
 function fontCheck () {
     if(isMobile()) {
         $('.sgt').html('SGT');
-        
     }
 }
 
