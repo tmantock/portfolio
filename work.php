@@ -31,7 +31,7 @@
                 <a href = 'javascript:void(0)' class = 'btn '>Description
                     <div class = 'ripple-container'></div>
                 </a>
-                <a href = 'javascript:void(0)' class = 'btn '>Live Demo
+                <a href = 'javascript:void(0)' class = 'btn '>Larger View
                     <div class = 'ripple-container'></div>
                 </a>
             </div>
@@ -52,7 +52,7 @@
                 <a href = 'javascript:void(0)' class = 'btn '>Description
                     <div class = 'ripple-container'></div>
                 </a>
-                <a href = 'javascript:void(0)' class = 'btn '>Live Demo
+                <a href = 'javascript:void(0)' class = 'btn '>Larger View
                     <div class = 'ripple-container'></div>
                 </a>
             </div>
@@ -73,7 +73,7 @@
                 <a href = 'javascript:void(0)' class = 'btn '>Description
                     <div class = 'ripple-container'></div>
                 </a>
-                <a href = 'javascript:void(0)' class = 'btn '>Live Demo
+                <a href = 'javascript:void(0)' class = 'btn '>Larger View
                     <div class = 'ripple-container'></div>
                 </a>
             </div>
@@ -94,7 +94,7 @@
                 <a href = 'javascript:void(0)' class = 'btn '>Description
                     <div class = 'ripple-container'></div>
                 </a>
-                <a href = 'javascript:void(0)' class = 'btn '>Live Demo
+                <a href = 'javascript:void(0)' class = 'btn '>Larger View
                     <div class = 'ripple-container'></div>
                 </a>
             </div>
@@ -115,7 +115,7 @@
                 <a href = 'javascript:void(0)' class = 'btn '>Description
                     <div class = 'ripple-container'></div>
                 </a>
-                <a href = 'javascript:void(0)' class = 'btn '>Live Demo
+                <a href = 'javascript:void(0)' class = 'btn '>LLarger View
                     <div class = 'ripple-container'></div>
                 </a>
             </div>
