@@ -33,20 +33,15 @@ $page = ($menu[$_GET['page']]['url']);
     <link href='https://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
     <!--Personal Stylesheet-->
     <link href = "style.css" rel = "stylesheet" type = "text/css">
+    <?php
+    if($page == 'work.php'){
+        print("<link href = 'work.css' rel = 'stylesheet' type = 'text/css'>");
+    }
+    ?>
     <link href = "https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel = "stylesheet" type = "text/css">
     <script src = 'script.js'></script>
-    <?php
-        if($page == 'work.php'){
-            print("<link href = 'work.css' rel = 'stylesheet' type = 'text/css'>");
-        }
-    ?>
 </head>
-
-<?php
-
-?>
 <body>
-
 <nav id = 'navbar' class = "navbar navbar-warning navbar-fixed-top">
     <div class = 'container-fluid'>
         <div class = 'navbar-header'>
@@ -70,11 +65,9 @@ $page = ($menu[$_GET['page']]['url']);
         </div>
     </div>
 </nav>
-
 <?php
     require($page);
 ?>
-
 <script src="https://cdn.jsdelivr.net/bootstrap.material-design/0.5.9/js/ripples.min.js"></script>
 <script src="https://cdn.jsdelivr.net/bootstrap.material-design/0.5.9/js/material.min.js"></script>
 <script>
