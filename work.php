@@ -1,12 +1,10 @@
-<div class = 'make_web top_make_web'><p>Select a Project and See What The Web Can Do.</p></div>
+<div class = 'make_web top_make_web'><p>Select a Project and Click the Image to See What The Web Can Do.</p></div>
 <div class = 'listBox'>
     <div class = 'arrowContainer'>
         <i class="material-icons upArrow" data-position = '1'>keyboard_arrow_up</i>
         <i class="material-icons downArrow" data-position = '2'>keyboard_arrow_down</i>
     </div>
 </div>
-<div class = "make_web bottom_make_web"><p>Click to See.</p></div>
-
 <div class = 'projectContainer'>
     <div class = 'projectImageContainer col-lg-12 col-md-12 col-sm-12 col-xs-12' id = 'project1' data-information="projectInformationOne">
         <div class = 'projectTitle'><h1>Decider</h1></div>
@@ -44,7 +42,7 @@
         </button>
         <div class = 'projectInformationContainer' id = 'panels'>
             <div class = 'projectImage'>
-<!--                <iframe src="http://dev.tevinmantock.com/memory_match/"></iframe>-->
+                <iframe src="http://dev.tevinmantock.com/memory_match/"></iframe>
             </div>
             <div class = 'btn-group btn-group-justified btn-group-raised'>
                 <a  href = 'javascript:void(0)' class = 'btn '>See the Code
@@ -115,7 +113,7 @@
         </button>
         <div class = 'projectInformationContainer' id = 'studentGradeTable'>
             <div class = 'projectImage'>
-<!--                <iframe src="http://dev.tevinmantock.com/SGT/"></iframe>-->
+                <iframe src="http://dev.tevinmantock.com/SGT/"></iframe>
             </div>
             <div class = 'btn-group btn-group-justified btn-group-raised modal_button_container'>
                 <a  href = 'javascript:void(0)' class = 'btn '>See the Code

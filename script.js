@@ -141,7 +141,7 @@ $(document).ready(function (){
         $('.projectContainer').animate({top:(projectPosition) * -1 + 'px'},1300, function () {
             $('.listBox , .top_make_web, .projectTitle').css('display','block');
             $('.projectInformation').css({height:'0', width: '100%'});
-            $('.btn.btn-fab, .input-group-btn .btn.btn-fab').css('display','none')
+            $('.closer').css('display','none')
         });
     });
     
@@ -151,14 +151,6 @@ $(document).ready(function (){
     
     $('.downArrow').on('click',function(){
         listDown(this);
-    });
-
-    $('.listBox').on('mouseover',function(){
-        $('.top_make_web').show();
-        $('.bottom_make_web').hide();
-    }).on('mouseleave',function(){
-        $('.top_make_web').hide();
-        $('.bottom_make_web').show();
     });
 
     isMobile();

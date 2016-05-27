@@ -50,7 +50,7 @@ $page = ($menu[$_GET['page']]['url']);
                 <span class = "icon-bar"></span>
                 <span class = "icon-bar"></span>
             </button>
-            <a class = 'navbar-brand'>Tevin Mantock</a>
+            <a class = 'navbar-brand' id = 'brand'>Tevin Mantock</a>
         </div>
         <div class = 'navbar-collapse collapse navbar-warning-collapse'>
             <ul class = 'nav navbar-nav navbar-right'>
