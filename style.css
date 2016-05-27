@@ -47,6 +47,8 @@ body,
 .projectImageContainer {
     position: relative;
     height: 100%;
+    padding: 0;
+    margin: 0;
     border: none;
 }
 
@@ -79,39 +81,43 @@ body,
     font-weight: 800;
 }
 
-.project_list{
-    height: 50%;
-    position: absolute;
-    top:45%;
+/*.projectTitle {*/
+    /*height: 20%;*/
+    /*width: 100%;*/
+    /*text-align: center;*/
+    /*font-family: 'Roboto', sans-serif;*/
+    /*position: relative;*/
+    /*border: 3px solid transparent;*/
+    /*box-sizing: border-box;*/
+    /*color: #ffffff;*/
+    /*visibility: hidden;*/
+/*}*/
+
+.projectTitle {
+    height: 10%;
+    width: 47%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    position: relative;
+    top: 47%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%,-47%);
     z-index: +1;
 }
 
-.projectTitle {
-    height: 20%;
-    width: 100%;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    position: relative;
-    border: 3px solid transparent;
-    box-sizing: border-box;
-    color: #ffffff;
-    visibility: hidden;
-}
+/*.selectProject {*/
+    /*height: 20%;*/
+    /*width: 100%;*/
+    /*text-align: center;*/
+    /*font-family: 'Roboto', sans-serif;*/
+    /*position: relative;*/
+    /*border: 3px solid transparent;*/
+    /*box-sizing: border-box;*/
+    /*color: #ffffff;*/
+/*}*/
 
-.selectProject {
-    height: 20%;
-    width: 100%;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    position: relative;
-    border: 3px solid transparent;
-    box-sizing: border-box;
-    color: #ffffff;
-}
-
-.selectProject h1 {
+.projectTitle h1 {
     margin: 0;
     position: relative;
     top: 50%;
@@ -125,70 +131,99 @@ body,
     text-shadow: #ECECEC;
 }
 
-#projectOne {
+.make_web {
+    position: absolute;
+    color: #ffffff;
+    font-size: 1.3em;
+    font-weight: 400;
+    z-index: +2;
+}
+
+.top_make_web {
+    top: 43%;
+    left:50%;
+    transform: translate(-50%,-43%);
+}
+
+.bottom_make_web {
+    top: 58%;
+    left:50%;
+    transform: translate(-58%,-40%);
+    display: none;
+}
+
+.hide_web {
+    display: none;
+}
+
+.show_web {
+    display: block;
+}
+
+#project1 {
     background: linear-gradient(rgba(0,0,0,.10),rgba(0,0,0,.10)), url('./images/decider-work-2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
-#projectOne:hover {
+#project1:hover {
     background: linear-gradient(rgba(0,0,0,.40),rgba(0,0,0,.40)), url('./images/decider-work-2.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
-#projectTwo {
+#project2 {
     background: linear-gradient(rgba(0,0,0,.10),rgba(0,0,0,.10)), url('./images/panels-work.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
-#projectTwo:hover {
+#project2:hover {
     background: linear-gradient(rgba(0,0,0,.40),rgba(0,0,0,.40)), url('./images/panels-work.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
-#projectThree {
+#project3 {
     background: linear-gradient(rgba(0,0,0,.10),rgba(0,0,0,.10)), url('./images/moments-work.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
-#projectThree:hover {
+#project3:hover {
     background: linear-gradient(rgba(0,0,0,.40),rgba(0,0,0,.40)), url('./images/moments-work.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
-#projectFour {
+#project4 {
     background: linear-gradient(rgba(0,0,0,.10),rgba(0,0,0,.10)), url('./images/math-work.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
-#projectFour:hover {
+#project4:hover {
     background: linear-gradient(rgba(0,0,0,.40),rgba(0,0,0,40)), url('./images/math-work.jpeg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
-#projectFive {
+#project5 {
     background: linear-gradient(rgba(0,0,0,.10),rgba(0,0,0,.10)), url('./images/students-work.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
-#projectFive:hover {
+#project5:hover {
     background: linear-gradient(rgba(0,0,0,.40),rgba(0,0,0,.40)), url('./images/students-work.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -213,6 +248,11 @@ body,
 
 #projectInformationFive {
     background: radial-gradient(ellipse at center, #6C7A89 0%, #090a0f 100%);
+}
+
+iframe {
+    height: 100%;
+    width: 100%;
 }
 
 .btn.btn-fab, .input-group-btn .btn.btn-fab{
@@ -266,8 +306,9 @@ body,
 }
 
 .projectImage {
-    height: 91%;
+    height: 95%;
     width: 100%;
+    opacity: 100;
 }
 
 .projectHeader {

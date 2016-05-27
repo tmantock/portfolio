@@ -27,7 +27,7 @@
 </div>
 
 <div class = 'skills_divider'>
-    <h1>I Specialize In</h1>
+    <h1>I Specialize In The Following Technologies:</h1>
 </div>
 
 <div class = "about-me-row-2">

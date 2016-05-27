@@ -4,20 +4,21 @@ function isMobile() {
     return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 }
 
-function pageScroll () {
-    var project = $('.selectProject').attr('data-project');
-    var information = $('.selectProject').attr('data-information');
-    var id = '#' + project;
-    var projectPosition = $(id).position().top;
-    $(id).attr('data-information',information);
-    $('.projectContainer').animate({top:(projectPosition) * -1 + 'px'},1000);
-
-    $('.list_container').attr('data-information',information);
+function pageScroll (project) {
+    var projectPosition = project.position().top;
+    $('.projectContainer').animate({top:(projectPosition) * -1 + 'px'},1000,function () {
+        $('.projectTitle').show();
+    });
 }
 
 function listUp (element) {
+    $('.projectTitle').hide(300);
     var position = $(element).attr('data-position');
     if (position == '1') {
+        var sub_project = $('#project5');
+        pageScroll(sub_project);
+        $('.upArrow').attr('data-position',5);
+        $('.downArrow').attr('data-position',6);
         return;
     }
     if (arrowClick === true) {
@@ -26,28 +27,25 @@ function listUp (element) {
 
         var upCount = parseInt(position);
         upCount--;
-        var prevChild = '.project_list div:nth-child(' + upCount + ')';
+        var project = $('#project'+upCount);
+        pageScroll(project);
         var downCount = upCount + 1;
-        var target = $('.selectProject');
-        var height = target.height();
-        var listPosition = $('.project_list').position().top;
-        $('.selectProject').addClass('projectTitle').removeClass('selectProject');
-        $('.project_list').animate({top: (height + listPosition) + downCount * 2 + 'px'}, 100, function () {
-            $(prevChild).addClass('selectProject').removeClass('projectTitle');
-            $(element).attr('data-position', upCount);
-            $('.downArrow').attr('data-position', downCount);
-            pageScroll();
-            arrowClick = true;
-        });
-        $('.selectProject').addClass('projectTitle').removeClass('selectProject');
-
+        $(element).attr('data-position', upCount);
+        $('.downArrow').attr('data-position', downCount);
+        arrowClick = true;
     }
 
 }
 
 function listDown (element) {
+    $('.projectTitle').hide(300);
     var position = $(element).attr('data-position');
+    $('.upArrow').css('color','white');
     if(position == '6') {
+        var sub_project = $('#project1');
+        pageScroll(sub_project);
+        $('.upArrow').attr('data-position',1);
+        $('.downArrow').attr('data-position',2);
         return;
     }
     if (arrowClick === true) {
@@ -55,21 +53,13 @@ function listDown (element) {
         arrowClick = false;
 
         var downCount = parseInt(position);
-        var nextChild = '.project_list div:nth-child(' + downCount + ')';
+        var project = $('#project'+downCount);
+        pageScroll(project);
         downCount++;
         var upCount = downCount - 1;
-        var target = $('.selectProject');
-        var height = target.height();
-        var listPosition = $('.project_list').position().top;
-        $('.project_list').animate({top:(height * -1) + listPosition - upCount * 2 + 'px'},100,function(){
-            $(nextChild).addClass('selectProject').removeClass('projectTitle');
-            $(element).attr('data-position',downCount);
-            $('.upArrow').attr('data-position',upCount);
-            pageScroll();
-            arrowClick = true;
-        });
-        $('.selectProject').addClass('projectTitle').removeClass('selectProject');
-
+        $(element).attr('data-position',downCount);
+        $('.upArrow').attr('data-position',upCount);
+        arrowClick = true;
     }
 }
 
@@ -161,6 +151,14 @@ $(document).ready(function (){
     
     $('.downArrow').on('click',function(){
         listDown(this);
+    });
+
+    $('.projectImageContainer').on('mouseover',function(){
+        $('.top_make_web').toggle();
+        $('.bottom_make_web').toggle();
+    }).on('mouseleave',function(){
+        $('.top_make_web').toggle();
+        $('.bottom_make_web').toggle();
     });
 
     isMobile();
