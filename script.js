@@ -125,7 +125,7 @@ $(document).ready(function (){
         var infoPosition =  $(id).position().top;
         $('.projectContainer').animate({top:(infoPosition) * -1 +'px'},700, function () {
             $('.projectInformationContainer').css('display','block');
-            $(id).append(iframe.attr('src',site_array[arrayPosition]));
+            $(id + ' .projectInformationContainer .projectImage').append(iframe.attr('src',site_array[arrayPosition]));
         });
         setTimeout(function () {
             starScroll(id);
