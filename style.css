@@ -227,7 +227,6 @@ iframe {
     position: absolute;
     top:10%;
     right: 1%;
-    display: none;
 }
 
 .btn-group.btn-group-justified.btn-group-raised {
@@ -235,6 +234,10 @@ iframe {
     padding: 0;
     margin: 0;
     bottom: 0;
+}
+
+.closer i {
+    color: #000000;
 }
 
 .small_star {
@@ -260,7 +263,7 @@ iframe {
 }
 
 .projectInformationContainer {
-    height: 75%;
+    height: 85%;
     width: 90%;
     position: relative;
     top: 50%;
@@ -289,9 +292,6 @@ iframe {
     display: none;
 }
 
-.projectText {
-    font-size: 1.2em;
-}
 
 @keyframes scroll {
     from {
@@ -431,34 +431,34 @@ svg path {
 }
 
 .angular {
-    background: #424242;
+    background: #9E9E9E;
 }
 .angular_c {
-    background: #757575;
+    background: #E0E0E0;
 }
 
 .github {
-    background: #9E9E9E;
-}
-
-.git_c {
-    background: #E0E0E0;
-}
-
-.php {
-    background: #9E9E9E;
-}
-
-.php_c {
-    background: #E0E0E0;
-}
-
-.mySQl {
     background: #424242;
 }
 
-.sql_c {
+.git_c {
     background: #757575;
+}
+
+.php {
+    background: #424242;
+}
+
+.php_c {
+    background: #757575;
+}
+
+.mySQl {
+    background: #9E9E9E;
+}
+
+.sql_c {
+    background: #E0E0E0;
 }
 
 .javascript {
@@ -531,34 +531,21 @@ svg path {
         width: 90%;
     }
 
-    .listBox {
-        width: 90%;
+    .projectTitle h1 {
+        top: 5%;
     }
 
-    .project_list {
-        top: 45%;
+    .listBox {
+        width: 90%;
     }
 
     .arrowContainer i {
         font-size: 2em;
     }
 
-    .projectTextContainer {
-        height: 85%;
-        overflow: hidden;
-    }
-
-    .projectText {
-        font-size: 0.7em;
-    }
-
     .top_make_web {
-        font-size: 1em;
+        font-size: 0.90em;
         width: 90%;
-    }
-
-    .bottom_make_web {
-        font-size: 1em;
     }
 
     .badgeHolder {
@@ -577,6 +564,16 @@ svg path {
         text-decoration: none;
         padding: 0 20%;
     }
+
+    .projectInformationContainer {
+        top: 60%;
+        left: 50%;
+        transform: translate(-50%,-60%);
+    }
+
+    .nav.navbar-nav.navbar-right a {
+        padding: 15px 20px;
+    }
 }
 
 @media screen and (max-width: 736px) {
@@ -586,9 +583,9 @@ svg path {
     .skills_divider{
         height: 20%;
     }
-    .badgeHolder{
-        width: 30%;
-    }
+    /*.badgeHolder{*/
+        /*width: 30%;*/
+    /*}*/
     .mySQl img{
         width: 70%;
         position: relative;

@@ -1,5 +1,5 @@
 var arrowClick;
-
+var site_array = ["http://dev.tevinmantock.com/decider","http://dev.tevinmantock.com/memory_match","http://dev.tevinmantock.com/moments","http://dev.tevinmantock.com/calculator","http://dev.tevinmantock.com/SGT"];
 function isMobile() {
     return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 }
@@ -8,6 +8,7 @@ function pageScroll (project) {
     var projectPosition = project.position().top;
     $('.projectContainer').animate({top:(projectPosition) * -1 + 'px'},1000,function () {
         $('.projectTitle').show();
+        arrowClick = true;
     });
 }
 
@@ -32,7 +33,6 @@ function listUp (element) {
         var downCount = upCount + 1;
         $(element).attr('data-position', upCount);
         $('.downArrow').attr('data-position', downCount);
-        arrowClick = true;
     }
 
 }
@@ -59,7 +59,6 @@ function listDown (element) {
         var upCount = downCount - 1;
         $(element).attr('data-position',downCount);
         $('.upArrow').attr('data-position',upCount);
-        arrowClick = true;
     }
 }
 
@@ -118,13 +117,15 @@ $(function($){
 $(document).ready(function (){
     $('.projectImageContainer').on('click', function () {
         var info = $(this).attr('data-information');
+        var arrayPosition = $(this).attr('data-frame');
         var id = '#' + info;
+        var iframe = $('<iframe>');
         $(id).css({height: '100%', width: '100%'});
         $('.listBox , .make_web, .projectTitle').css('display','none');
         var infoPosition =  $(id).position().top;
         $('.projectContainer').animate({top:(infoPosition) * -1 +'px'},700, function () {
-            $('.btn.btn-fab, .input-group-btn .btn.btn-fab').css('display','block');
             $('.projectInformationContainer').css('display','block');
+            $(id).append(iframe.attr('src',site_array[arrayPosition]));
         });
         setTimeout(function () {
             starScroll(id);
@@ -134,14 +135,13 @@ $(document).ready(function (){
     $('.closer').on('click', function () {
         var info = $(this).attr('data-project');
         var id = '#' + info;
+        var iframe = $(id + ' iframe');
         var projectPosition = $(id).position().top;
         $('.projectInformationContainer').css('display','none');
-        $('.small_star').remove();
-        $('.big_star').remove();
+        $('.small_star , .big_star, iframe').remove();
         $('.projectContainer').animate({top:(projectPosition) * -1 + 'px'},1300, function () {
             $('.listBox , .top_make_web, .projectTitle').css('display','block');
             $('.projectInformation').css({height:'0', width: '100%'});
-            $('.closer').css('display','none')
         });
     });
     

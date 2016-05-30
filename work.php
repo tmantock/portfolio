@@ -6,17 +6,17 @@
     </div>
 </div>
 <div class = 'projectContainer'>
-    <div class = 'projectImageContainer col-lg-12 col-md-12 col-sm-12 col-xs-12' id = 'project1' data-information="projectInformationOne">
-        <div class = 'projectTitle'><h1>Decider</h1></div>
+    <div class = 'projectImageContainer col-lg-12 col-md-12 col-sm-12 col-xs-12' id = 'project1' data-information="projectInformationOne" data-frame="0">
+        <div class = 'projectTitle'><h1>What's For Lunch</h1></div>
     </div>
-    <div class = 'projectInformation col-lg-12 col-md-12 col-sm-12 col-xs-12' id = 'projectInformationOne' data-information="projectInformationOne">
-        <h1 class = 'projectHeader'>Decider</h1>
+    <div class = 'projectInformation col-lg-12 col-md-12 col-sm-12 col-xs-12' id = 'projectInformationOne'>
+        <h1 class = 'projectHeader'>What's for Lunch?</h1>
         <button type = 'button' class = 'closer btn btn-fab btn-material-grey-200 opensource' data-project = 'project1'>
             <i class="material-icons">highlight_off</i>
         </button>
         <div class = 'projectInformationContainer' id = 'decider'>
             <div class = 'projectImage'>
-                
+
             </div>
             <div class = 'btn-group btn-group-justified btn-group-raised'>
 
@@ -32,7 +32,7 @@
             </div>
         </div>
     </div>
-    <div class = 'projectImageContainer col-lg-12 col-md-12 col-sm-12 col-xs-12' id = 'project2' data-information="projectInformationTwo">
+    <div class = 'projectImageContainer col-lg-12 col-md-12 col-sm-12 col-xs-12' id = 'project2' data-information="projectInformationTwo" data-frame="1">
         <div class = 'projectTitle' data-project = 'projectTwo'><h1>Panels</h1></div>
     </div>
     <div class = 'projectInformation col-lg-12 col-md-12 col-sm-12 col-xs-12' id = 'projectInformationTwo'>
@@ -42,7 +42,7 @@
         </button>
         <div class = 'projectInformationContainer' id = 'panels'>
             <div class = 'projectImage'>
-                <iframe src="http://dev.tevinmantock.com/memory_match/"></iframe>
+
             </div>
             <div class = 'btn-group btn-group-justified btn-group-raised'>
                 <a  href = 'javascript:void(0)' class = 'btn '>See the Code
@@ -57,7 +57,7 @@
             </div>
         </div>
     </div>
-    <div class = 'projectImageContainer col-lg-12 col-md-12 col-sm-12 col-xs-12' id = 'project3' data-information="projectInformationThree">
+    <div class = 'projectImageContainer col-lg-12 col-md-12 col-sm-12 col-xs-12' id = 'project3' data-information="projectInformationThree" data-frame="2">
         <div class = 'projectTitle'><h1>Moments</h1></div>
     </div>
     <div class = 'projectInformation col-lg-12 col-md-12 col-sm-12 col-xs-12' id = 'projectInformationThree'>
@@ -66,7 +66,9 @@
             <i class="material-icons">highlight_off</i>
         </button>
         <div class = 'projectInformationContainer' id = 'moments'>
-            <div class = 'projectImage'></div>
+            <div class = 'projectImage'>
+
+            </div>
             <div class = 'btn-group btn-group-justified btn-group-raised'>
                 <a  href = 'javascript:void(0)' class = 'btn '>See the Code
                     <div class = 'ripple-container'></div>
@@ -80,7 +82,7 @@
             </div>
         </div>
     </div>
-    <div class = 'projectImageContainer col-lg-12 col-md-12 col-sm-12 col-xs-12' id = 'project4' data-information="projectInformationFour">
+    <div class = 'projectImageContainer col-lg-12 col-md-12 col-sm-12 col-xs-12' id = 'project4' data-information="projectInformationFour" data-frame="3">
         <div class = 'projectTitle'><h1>Calculator</h1></div>
     </div>
     <div class = 'projectInformation col-lg-12 col-md-12 col-sm-12 col-xs-12' id = 'projectInformationFour'>
@@ -89,7 +91,9 @@
             <i class="material-icons">highlight_off</i>
         </button>
         <div class = 'projectInformationContainer' id = 'calculator'>
-            <div class = 'projectImage'></div>
+            <div class = 'projectImage'>
+
+            </div>
             <div class = 'btn-group btn-group-justified btn-group-raised'>
                 <a  href = 'javascript:void(0)' class = 'btn '>See the Code
                     <div class = 'ripple-container'></div>
@@ -103,7 +107,7 @@
             </div>
         </div>
     </div>
-    <div class = 'projectImageContainer col-lg-12 col-md-12 col-sm-12 col-xs-12' id = 'project5' data-information="projectInformationFive">
+    <div class = 'projectImageContainer col-lg-12 col-md-12 col-sm-12 col-xs-12' id = 'project5' data-information="projectInformationFive" data-frame="4">
         <div class = 'projectTitle'><h1 class = 'sgt' id = 'sgt'>Student Grade Table</h1></div>
     </div>
     <div class = 'projectInformation col-lg-12 col-md-12 col-sm-12 col-xs-12' id = 'projectInformationFive'>
@@ -113,7 +117,7 @@
         </button>
         <div class = 'projectInformationContainer' id = 'studentGradeTable'>
             <div class = 'projectImage'>
-                <iframe src="http://dev.tevinmantock.com/SGT/"></iframe>
+
             </div>
             <div class = 'btn-group btn-group-justified btn-group-raised modal_button_container'>
                 <a  href = 'javascript:void(0)' class = 'btn '>See the Code
