@@ -38,6 +38,7 @@ body {
 
 #brand {
     background: #F4D03F;
+    height: 100%;
     color: #000000;
 }
 
@@ -114,18 +115,10 @@ body {
 
 .top_make_web {
     text-align: center;
-    width: 55%;
+    width: 75%;
     top: 43%;
     left:50%;
     transform: translate(-50%,-43%);
-}
-
-.bottom_make_web {
-    text-align: center;
-    top: 58%;
-    left:52%;
-    transform: translate(-52%,-40%);
-    display: none;
 }
 
 #project1 {
@@ -532,14 +525,15 @@ svg path {
     }
 
     .projectTitle h1 {
-        top: 5%;
+        margin-top: 15px;
     }
 
     .listBox {
         width: 90%;
     }
 
-    .arrowContainer i {
+    .downArrow,
+    .upArrow {
         font-size: 2em;
     }
 
@@ -577,9 +571,9 @@ svg path {
 }
 
 @media screen and (max-width: 736px) {
-    .arrowContainer i {
-        font-size: 1.2em;
-    }
+    /*.arrowContainer i {*/
+        /*font-size: 1.2em;*/
+    /*}*/
     .skills_divider{
         height: 20%;
     }
@@ -591,6 +585,12 @@ svg path {
         position: relative;
         left: 50%;
         transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 1199px) {
+    .navbar .navbar-brand {
+        padding: 15px;
     }
 }
 
