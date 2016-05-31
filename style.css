@@ -10,7 +10,7 @@ body {
     width: 100%;
     margin: 0;
     padding: 0;
-    background-color: rgb(66,66,66);
+    background-color: rgba(66,66,66,0.80);
 }
 
 #navbar ul {
@@ -90,6 +90,7 @@ body {
     border: 3px solid transparent;
     box-sizing: border-box;
     color: #ffffff;
+    display: table;
     position: relative;
     top: 50%;
     left: 50%;
@@ -99,10 +100,8 @@ body {
 
 .projectTitle h1 {
     font-size: 2em;
+    vertical-align: middle;
     text-shadow: #ECECEC;
-    position: relative;
-    top: 15%;
-    transform: translateY(-15%);
 }
 
 .make_web {
@@ -256,12 +255,12 @@ iframe {
 }
 
 .projectInformationContainer {
-    height: 85%;
+    height: 80%;
     width: 90%;
     position: relative;
-    top: 50%;
+    top: 60%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-60%);
     background: linear-gradient(rgba(0,0,0,.40),rgba(0,0,0,.40));
     border: 1px solid white;
     color: #ffffff;
@@ -285,6 +284,9 @@ iframe {
     display: none;
 }
 
+iframe {
+    overflow: hidden;
+}
 
 @keyframes scroll {
     from {
@@ -489,6 +491,10 @@ svg path {
     margin: 0 3%;
 }
 
+.contact-glyphs {
+    padding: 0;
+}
+
 .contact-glyphs li a{
     text-decoration: none;
     padding: 0 30%;
@@ -520,15 +526,8 @@ svg path {
         font-size: 1em;
     }
 
+    .listBox,
     .projectTitle {
-        width: 90%;
-    }
-
-    .projectTitle h1 {
-        margin-top: 15px;
-    }
-
-    .listBox {
         width: 90%;
     }
 
@@ -551,7 +550,7 @@ svg path {
     }
 
     .contactContainer {
-        padding-top: 10%;
+        padding-top: 12%;
     }
 
     .contact-glyphs li a {
@@ -570,27 +569,8 @@ svg path {
     }
 }
 
-@media screen and (max-width: 736px) {
-    /*.arrowContainer i {*/
-        /*font-size: 1.2em;*/
-    /*}*/
-    .skills_divider{
-        height: 20%;
-    }
-    /*.badgeHolder{*/
-        /*width: 30%;*/
-    /*}*/
-    .mySQl img{
-        width: 70%;
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-}
-
 @media (max-width: 1199px) {
     .navbar .navbar-brand {
         padding: 15px;
     }
 }
-
