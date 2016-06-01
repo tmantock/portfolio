@@ -4,9 +4,9 @@ function isMobile() {
     return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 }
 
-function pageScroll (project) {
+function pageScroll (project,time) {
     var projectPosition = project.position().top;
-    $('.projectContainer').animate({top:(projectPosition) * -1 + 'px'},1000,function () {
+    $('.projectContainer').animate({top:(projectPosition) * -1 + 'px'},time,function () {
         $('.projectTitle').show();
         arrowClick = true;
     });
@@ -17,7 +17,7 @@ function listUp (element) {
     var position = $(element).attr('data-position');
     if (position == '1') {
         var sub_project = $('#project5');
-        pageScroll(sub_project);
+        pageScroll(sub_project,2500);
         $('.upArrow').attr('data-position',5);
         $('.downArrow').attr('data-position',6);
         return;
@@ -29,7 +29,7 @@ function listUp (element) {
         var upCount = parseInt(position);
         upCount--;
         var project = $('#project'+upCount);
-        pageScroll(project);
+        pageScroll(project,1000);
         var downCount = upCount + 1;
         $(element).attr('data-position', upCount);
         $('.downArrow').attr('data-position', downCount);
@@ -43,7 +43,7 @@ function listDown (element) {
     $('.upArrow').css('color','white');
     if(position == '6') {
         var sub_project = $('#project1');
-        pageScroll(sub_project);
+        pageScroll(sub_project,2500);
         $('.upArrow').attr('data-position',1);
         $('.downArrow').attr('data-position',2);
         return;
@@ -54,7 +54,7 @@ function listDown (element) {
 
         var downCount = parseInt(position);
         var project = $('#project'+downCount);
-        pageScroll(project);
+        pageScroll(project,1000);
         downCount++;
         var upCount = downCount - 1;
         $(element).attr('data-position',downCount);
