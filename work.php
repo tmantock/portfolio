@@ -26,7 +26,7 @@
                 <a href = 'javascript:void(0)' class = 'btn '>Description
                     <div class = 'ripple-container'></div>
                 </a>
-                <a href = 'javascript:void(0)' class = 'btn '>Larger View
+                <a href = 'http://dev.tevinmantock.com/decider/' target = "_blank" class = 'btn '>Larger View
                     <div class = 'ripple-container'></div>
                 </a>
             </div>
@@ -51,7 +51,7 @@
                 <a href = 'javascript:void(0)' class = 'btn '>Description
                     <div class = 'ripple-container'></div>
                 </a>
-                <a href = 'javascript:void(0)' class = 'btn '>Larger View
+                <a href = 'http://dev.tevinmantock.com/memory_match/' target = "_blank" class = 'btn '>Larger View
                     <div class = 'ripple-container'></div>
                 </a>
             </div>
@@ -76,7 +76,7 @@
                 <a href = 'javascript:void(0)' class = 'btn '>Description
                     <div class = 'ripple-container'></div>
                 </a>
-                <a href = 'javascript:void(0)' class = 'btn '>Larger View
+                <a href = 'http://dev.tevinmantock.com/moments/' target = "_blank" class = 'btn '>Larger View
                     <div class = 'ripple-container'></div>
                 </a>
             </div>
@@ -101,7 +101,7 @@
                 <a href = 'javascript:void(0)' class = 'btn '>Description
                     <div class = 'ripple-container'></div>
                 </a>
-                <a href = 'javascript:void(0)' class = 'btn '>Larger View
+                <a href = 'http://dev.tevinmantock.com/calculator/' target = "_blank" class = 'btn '>Larger View
                     <div class = 'ripple-container'></div>
                 </a>
             </div>
@@ -126,7 +126,7 @@
                 <a href = 'javascript:void(0)' class = 'btn '>Description
                     <div class = 'ripple-container'></div>
                 </a>
-                <a href = 'javascript:void(0)' class = 'btn '>Larger View
+                <a href = 'http://dev.tevinmantock.com/SGT/' target = "_blank" class = 'btn '>Larger View
                     <div class = 'ripple-container'></div>
                 </a>
             </div>

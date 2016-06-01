@@ -121,14 +121,14 @@ body {
 }
 
 #project1 {
-    background: linear-gradient(rgba(0,0,0,.10),rgba(0,0,0,.10)), url('./images/decider-work-2.jpg');
+    background: linear-gradient(rgba(0,0,0,.10),rgba(0,0,0,.10)), url('./images/work-wfl.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
 }
 
 #project1:hover {
-    background: linear-gradient(rgba(0,0,0,.40),rgba(0,0,0,.40)), url('./images/decider-work-2.jpg');
+    background: linear-gradient(rgba(0,0,0,.40),rgba(0,0,0,.40)), url('./images/work-wfl.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;

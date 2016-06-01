@@ -139,7 +139,7 @@ $(document).ready(function (){
         var projectPosition = $(id).position().top;
         $('.projectInformationContainer').css('display','none');
         $('.small_star , .big_star, iframe').remove();
-        $('.projectContainer').animate({top:(projectPosition) * -1 + 'px'},1300, function () {
+        $('.projectContainer').animate({top:(projectPosition) * -1 + 'px'},800, function () {
             $('.listBox , .top_make_web, .projectTitle').css('display','block');
             $('.projectInformation').css({height:'0', width: '100%'});
         });
