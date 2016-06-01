@@ -79,11 +79,11 @@ function starScroll (id) {
         var starSmall;
         var starBig;
 
-        for (i = 0; i < 35; i++) {
+        for (i = 0; i < 25; i++) {
             var newPosition = randomPosition(id);
             starBig = $('<div>').addClass('big_star').css({top: newPosition[0], left: newPosition[1]});
             $(id).append(starBig);
-            for (x = 0; x < 20; x++) {
+            for (x = 0; x < 10; x++) {
                 var newPosition = randomPosition(id);
                 starSmall = $('<div>').addClass('small_star').css({top: newPosition[0], left: newPosition[1]});
                 $(id).append(starSmall);
