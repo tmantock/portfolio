@@ -144,18 +144,25 @@ $(document).ready(function (){
             $('.projectInformation').css({height:'0', width: '100%'});
         });
     });
-    
+
     $('.upArrow').on('click',function (){
         listUp(this);
     });
-    
+
     $('.downArrow').on('click',function(){
         listDown(this);
     });
 
+    // $(".nav li:first-child").addClass("active");
+    //
+    // $(".nav a").on("click", function(){
+    //   $(".nav").find(".active").removeClass("active");
+    //   $(this).parent().addClass("active");
+    // });
+
     isMobile();
 
     fontCheck();
-    
+
     arrowClick = true;
 });

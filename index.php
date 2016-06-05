@@ -1,13 +1,13 @@
 <?php
 $menu = [
-    'work' => ['url'=>'work.php','link'=>'Work'],
     'about-me' => ['url'=>'about-me.php','link'=>'About Me'],
+    'work' => ['url'=>'work.php','link'=>'Work'],
     'contact' => ['url'=>'contact.php','link'=>'Contact']
 ];
 ?>
 <?php
 if(empty($_GET['page'])){
-    $_GET['page'] = 'work';
+    $_GET['page'] = 'about-me';
 }
 else{
     if(empty($_GET['page'])){
@@ -57,7 +57,7 @@ $page = ($menu[$_GET['page']]['url']);
                 <?php
                     foreach($menu as $key => $value) {
                         ?>
-                        <li ><a href ="?page=<?=$key;?>"><?=$value['link'];?></a></li>
+                        <li><a href ="?page=<?=$key;?>"><?=$value['link'];?></a></li>
                 <?php
                 }
                 ?>
