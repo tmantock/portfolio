@@ -1,5 +1,5 @@
 var arrowClick;
-var site_array = ["http://dev.tevinmantock.com/decider","http://dev.tevinmantock.com/memory_match","http://dev.tevinmantock.com/moments","http://dev.tevinmantock.com/calculator","http://dev.tevinmantock.com/SGT"];
+//var site_array = ["http://dev.tevinmantock.com/decider","http://dev.tevinmantock.com/memory_match","http://dev.tevinmantock.com/moments","http://dev.tevinmantock.com/calculator","http://dev.tevinmantock.com/SGT"];
 function isMobile() {
     return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 }
@@ -17,7 +17,7 @@ function listUp (element) {
     var position = $(element).attr('data-position');
     if (position == '1') {
         var sub_project = $('#project5');
-        pageScroll(sub_project,2500);
+        pageScroll(sub_project,1200);
         $('.upArrow').attr('data-position',5);
         $('.downArrow').attr('data-position',6);
         return;
@@ -43,7 +43,7 @@ function listDown (element) {
     $('.upArrow').css('color','white');
     if(position == '6') {
         var sub_project = $('#project1');
-        pageScroll(sub_project,2500);
+        pageScroll(sub_project,1200);
         $('.upArrow').attr('data-position',1);
         $('.downArrow').attr('data-position',2);
         return;
@@ -119,13 +119,13 @@ $(document).ready(function (){
         var info = $(this).attr('data-information');
         var arrayPosition = $(this).attr('data-frame');
         var id = '#' + info;
-        var iframe = $('<iframe>');
+        //var iframe = $('<iframe>');
         $(id).css({height: '100%', width: '100%'});
         $('.listBox , .make_web, .projectTitle').css('display','none');
         var infoPosition =  $(id).position().top;
         $('.projectContainer').animate({top:(infoPosition) * -1 +'px'},700, function () {
             $('.projectInformationContainer').css('display','block');
-            $(id + ' .projectInformationContainer .projectImage').append(iframe.attr('src',site_array[arrayPosition]));
+          //  $(id + ' .projectInformationContainer .projectImage').append(iframe.attr('src',site_array[arrayPosition]));
         });
         setTimeout(function () {
             starScroll(id);
@@ -135,10 +135,10 @@ $(document).ready(function (){
     $('.closer').on('click', function () {
         var info = $(this).attr('data-project');
         var id = '#' + info;
-        var iframe = $(id + ' iframe');
+        //var iframe = $(id + ' iframe');
         var projectPosition = $(id).position().top;
         $('.projectInformationContainer').css('display','none');
-        $('.small_star , .big_star, iframe').remove();
+        $('.small_star , .big_star').remove();
         $('.projectContainer').animate({top:(projectPosition) * -1 + 'px'},800, function () {
             $('.listBox , .top_make_web, .projectTitle').css('display','block');
             $('.projectInformation').css({height:'0', width: '100%'});
