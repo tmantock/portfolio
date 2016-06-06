@@ -2,6 +2,7 @@
 $menu = [
     'about-me' => ['url'=>'about-me.php','link'=>'About Me'],
     'work' => ['url'=>'work.php','link'=>'Work'],
+    'skills' => ['url'=>'skills.php','link'=>'Skills'],
     'contact' => ['url'=>'contact.php','link'=>'Contact']
 ];
 ?>
@@ -34,7 +35,7 @@ $page = ($menu[$_GET['page']]['url']);
     <!--Personal Stylesheet-->
     <link href = "style.css" rel = "stylesheet" type = "text/css">
     <?php
-    if($page == 'work.php'){
+    if($page == 'work.php' || $page == 'skills.php'){
         print("<link href = 'work.css' rel = 'stylesheet' type = 'text/css'>");
     }
     ?>

@@ -121,7 +121,7 @@ body {
 }
 
 #project1 {
-  background: linear-gradient(rgba(0,0,0,.10),rgba(0,0,0,.10)), url('./images/decider-work.jpg');
+  background: linear-gradient(rgba(0,0,0,.30),rgba(0,0,0,.10)), url('./images/decider-work.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -135,7 +135,7 @@ body {
 }
 
 #project2 {
-  background: linear-gradient(rgba(0,0,0,.10),rgba(0,0,0,.10)), url('./images/macaron-work.jpg');
+  background: linear-gradient(rgba(0,0,0,.30),rgba(0,0,0,.10)), url('./images/macaron-work.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -200,7 +200,8 @@ body {
   background: radial-gradient(ellipse at center, #1b2735 0%, #090a0f 100%);
 }
 
-#projectInformationThree {
+#projectInformationThree,
+.skills-holder {
   background: radial-gradient(ellipse at center, #2C3E50 0%, #090a0f 100%);
 }
 
@@ -255,10 +256,6 @@ body {
 }
 
 /****************About Me Page Contents**********************/
-#about-me {
-  overflow-x: hidden;
-  overflow-y: scroll;
-}
 #Layer_1 {
   padding: 0 0 3% 0;
   width: 100%;
@@ -289,153 +286,58 @@ svg path {
   }
 }
 
-.about-me-row-1 {
-  width: 100%;
+.personal-description,
+.image-section {
   height: 100%;
 }
 
-.personal_image,
-.about_me_description {
-  height: 100%;
-  padding: 0;
-}
-
-.about-me-row-2,
-.about-me-row-3,
-.about-me-row-4 {
-  width: 100%;
-  height: 50%;
-}
-
-.about_me_text {
-  padding: 10% 10% 0 10%;
-  font-size: 2em;
-  font-weight: 300;
-}
-
-.skills_divider {
-  height: 10%;
-  width: 100%;
-  border: 3px solid rgba(0,0,0,.3);
-  border-left: none;
-  border-right: none;
-  text-align: center;
-}
-
-.skill {
-  height: 100%;
-  border: none;
+.personal-image {
   position: relative;
-  overflow: hidden;
-  padding: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
 }
-
-.caption h1 {
-  text-align: center;
-  margin-top: 2%;
-}
-
-.caption {
-  position: absolute;
-  bottom: 0;
-  transform: translateY(100%);
-  transition-duration: .6s;
-}
-
-.skill_text {
-  height: 50%;
+/****************Skills Page******************************/
+.skills-holder {
+  height: 100%;
   width: 100%;
-  padding: 5%;
-  margin: 0;
+  color: white;
+  overflow: hidden;
 }
 
-.badgeHolder {
+.skills-list{
+  padding: 5% 0;
+  margin-bottom: 3%;
+  width: 100%;
+  height: 20%;
+}
+
+.front-end-circle,
+.back-end-circle,
+.dev-circle {
+  position: absolute;
+  left: 1%;
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin: 0 5%;
+  display: inline-block;
+  border: 1px solid white;
+}
+
+.front-end-circle img,
+.back-end-circle img,
+.dev-circle img {
   position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
   height: 70%;
   width: 70%;
-  margin: 0;
-  padding: 0;
 }
-
-.mySQl .badgeHolder {
-  width: 83%;
-}
-
-.badgeHolder img {
-  height: 100%;
-  width: 100%;
-}
-
-.css3 {
-  background: #424242;
-}
-
-.css_c {
-  background: #757575;
-}
-
-.html {
-  background: #9E9E9E;
-}
-
-.html_c {
-  background: #E0E0E0;
-}
-
-.bootstrap {
-  background: #9E9E9E;
-}
-
-.bootstrap_c {
-  background: #E0E0E0;
-}
-
-.angular {
-  background: #9E9E9E;
-}
-.angular_c {
-  background: #E0E0E0;
-}
-
-.github {
-  background: #424242;
-}
-
-.git_c {
-  background: #757575;
-}
-
-.php {
-  background: #424242;
-}
-
-.php_c {
-  background: #757575;
-}
-
-.mySQl {
-  background: #9E9E9E;
-}
-
-.sql_c {
-  background: #E0E0E0;
-}
-
-.javascript {
-  background: #424242;
-}
-
-.js_c {
-  background: #757575;
-}
-
-.skill:hover .caption{
-  transform: translateY(0%);
-}
-
 /****************Contacts Page Content**********************/
 .contactContainer {
   padding-top: 7%;

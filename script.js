@@ -1,4 +1,7 @@
 var arrowClick;
+var front_end_array = ["./images/html5.png","./images/css.svg","./images/bootstrap.png","./images/javascript.png","./images/angular.png"];
+var back_end_array = ["./images/php.svg","./images/sql.png"];
+var dev_tools_array = ["./images/octocat.png"];
 //var site_array = ["http://dev.tevinmantock.com/decider","http://dev.tevinmantock.com/memory_match","http://dev.tevinmantock.com/moments","http://dev.tevinmantock.com/calculator","http://dev.tevinmantock.com/SGT"];
 function isMobile() {
     return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
@@ -75,21 +78,39 @@ function randomPosition(id){
 
 function starScroll (id) {
 
-    if(!isMobile()) {
-        var starSmall;
-        var starBig;
+  if(!isMobile()) {
+    var starSmall;
+    var starBig;
 
-        for (i = 0; i < 25; i++) {
-            var newPosition = randomPosition(id);
-            starBig = $('<div>').addClass('big_star').css({top: newPosition[0], left: newPosition[1]});
-            $(id).append(starBig);
-            for (x = 0; x < 10; x++) {
-                var newPosition = randomPosition(id);
-                starSmall = $('<div>').addClass('small_star').css({top: newPosition[0], left: newPosition[1]});
-                $(id).append(starSmall);
-            }
-        }
+    for (i = 0; i < 25; i++) {
+      var newPosition = randomPosition(id);
+      starBig = $('<div>').addClass('big_star').css({top: newPosition[0], left: newPosition[1]});
+      $(id).append(starBig);
+      for (x = 0; x < 10; x++) {
+        var newPosition = randomPosition(id);
+        starSmall = $('<div>').addClass('small_star').css({top: newPosition[0], left: newPosition[1]});
+        $(id).append(starSmall);
+      }
     }
+  }
+}
+
+function skills_list_to_DOM (array, parent, style) {
+  var div = $("<div>").addClass(style);
+  var img = array[0];
+  var image_tag = $("<img>").attr("src",img);
+  div.append(image_tag);
+  parent.append(div);
+  incrementer = 1;
+  for(var i=1; i<array.length; i++){
+    div = $("<div>").addClass(style);
+    img = array[i];
+    image_tag = $("<img>").attr("src",img);
+    div.append(image_tag);
+    var width = $("." + style + ":last-child").width();
+    parent.append(div);
+    $("." + style + ":last-child").animate({left:(width * incrementer) + (30 * incrementer++) + "px"},1000);
+  }
 }
 
 function fontCheck () {
@@ -119,13 +140,11 @@ $(document).ready(function (){
         var info = $(this).attr('data-information');
         var arrayPosition = $(this).attr('data-frame');
         var id = '#' + info;
-        //var iframe = $('<iframe>');
         $(id).css({height: '100%', width: '100%'});
         $('.listBox , .make_web, .projectTitle').css('display','none');
         var infoPosition =  $(id).position().top;
         $('.projectContainer').animate({top:(infoPosition) * -1 +'px'},700, function () {
             $('.projectInformationContainer').css('display','block');
-          //  $(id + ' .projectInformationContainer .projectImage').append(iframe.attr('src',site_array[arrayPosition]));
         });
         setTimeout(function () {
             starScroll(id);
@@ -163,6 +182,9 @@ $(document).ready(function (){
     isMobile();
 
     fontCheck();
-
+    starScroll($(".skills-holder"));
+    skills_list_to_DOM(front_end_array,$("#front-end"), "front-end-circle");
+    skills_list_to_DOM(back_end_array,$("#back-end"), "back-end-circle");
+    skills_list_to_DOM(dev_tools_array,$("#dev-tools"), "dev-circle");
     arrowClick = true;
 });
