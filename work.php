@@ -7,20 +7,20 @@
 </div>
 <div class = 'projectContainer'>
     <div class = 'projectImageContainer col-lg-12 col-md-12 col-sm-12 col-xs-12' id = 'project1' data-information="projectInformationOne" data-frame="0">
-        <div class = 'projectTitle'><h1>What's For Lunch</h1></div>
+        <div class = 'projectTitle'><h1>Decider</h1></div>
     </div>
     <div class = 'projectInformation col-lg-12 col-md-12 col-sm-12 col-xs-12' id = 'projectInformationOne'>
-        <h1 class = 'projectHeader'>What's for Lunch?</h1>
+        <h1 class = 'projectHeader'>Decider</h1>
         <button type = 'button' class = 'closer btn btn-fab btn-material-grey-200 opensource' data-project = 'project1'>
             <i class="material-icons">highlight_off</i>
         </button>
 
     </div>
     <div class = 'projectImageContainer col-lg-12 col-md-12 col-sm-12 col-xs-12' id = 'project2' data-information="projectInformationTwo" data-frame="1">
-        <div class = 'projectTitle' data-project = 'projectTwo'><h1>Panels</h1></div>
+        <div class = 'projectTitle' data-project = 'projectTwo'><h1>mBoutique</h1></div>
     </div>
     <div class = 'projectInformation col-lg-12 col-md-12 col-sm-12 col-xs-12' id = 'projectInformationTwo'>
-        <h1 class = 'projectHeader'>Panels</h1>
+        <h1 class = 'projectHeader'>mBoutique</h1>
         <button type = 'button' class = 'closer btn btn-fab btn-material-grey-200 opensource' data-project = 'project2'>
             <i class="material-icons">highlight_off</i>
         </button>
@@ -54,6 +54,6 @@
         <button type = 'button' class = 'closer btn btn-fab btn-material-grey-200 opensource' data-project = 'project5'>
             <i class="material-icons">highlight_off</i>
         </button>
-        
+
     </div>
 </div>
