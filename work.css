@@ -1,5 +1,0 @@
-/*Only prevent the work page from having scroll functionality*/
-html,
-body {
-    overflow: hidden;
-}
