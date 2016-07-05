@@ -2,8 +2,8 @@
 ====================================================
 * [Master Stylesheet]
 
-  Template Name : Privado 
-  Version    :  1.0 
+  Template Name : Privado
+  Version    :  1.0
   Author     :  Codetic
   Author URI :  http://themeforest.net/user/Codetic
 ====================================================
@@ -45,7 +45,7 @@
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css");
 
 
-/* -------------------------------- 
+/* --------------------------------
 1. Primary style
 -------------------------------- */
 
@@ -194,12 +194,12 @@ ul li {
 
 
 /* ------------------------------------------------
-/*  1.a. Color Schemes for Home Page backgrounds 
+/*  1.a. Color Schemes for Home Page backgrounds
 /*  Choose one and comment/remove other two
 /* ------------------------------------------------*/
 
 
-/* Olive Scheme  
+/* Olive Scheme
 ----------------------------------*/
 
 .single-page:nth-child(1) {
@@ -241,7 +241,7 @@ ul li {
 */
 
 
-/* Dark Scheme 
+/* Dark Scheme
 ----------------------------------*/
 
 /*.single-page:nth-child(1) {
@@ -262,7 +262,7 @@ ul li {
 */
 
 
-/* -------------------------------- 
+/* --------------------------------
     1.b. Fun Facts Styles
 -------------------------------- */
 
@@ -316,7 +316,7 @@ ul li {
 }
 
 
-/* -------------------------------- 
+/* --------------------------------
     1.c. Footer Styles
 -------------------------------- */
 
@@ -357,17 +357,17 @@ ul li {
 
 
 /* ------------------------------------------- */
-/* 2. Preloader CSS */ 
+/* 2. Preloader CSS */
 /* ------------------------------------------- */
 
 #preloader{
-  background-color:#101524; 
+  background-color:#101524;
   position:fixed;
   left:0;
   top:0;
   width:100%;
   height:100%;
-  z-index:9999;  
+  z-index:9999;
 }
 
 .loader {
@@ -382,8 +382,8 @@ ul li {
 
 
 
-/* -------------------------------- 
-/*   3. Main Components 
+/* --------------------------------
+/*   3. Main Components
 -------------------------------- */
 
 .page-container {
@@ -442,7 +442,7 @@ ul li {
 
 .page-container .single-page::before {
 /* never visible - this is used in jQuery to detect if the background image has been loaded  */
-  content:'img/img-1-small.jpg';
+  content:'img/me-small.jpg';
   display:none
 }
 
@@ -743,11 +743,11 @@ ul li {
 
 
 .page-container .single-page:first-of-type::before {
-  content:'img/img-1-large.jpg';
+  content:'img/me-large.jpg';
 }
 
 .page-container .single-page:first-of-type::after {
-  background-image:url("../img/img-1-large.jpg")
+  background-image:url("../img/me-large.jpg")
 }
 
 .page-container .single-page:nth-of-type(2) {
@@ -872,7 +872,7 @@ ul li {
 
 
 
-} /* min-width:768 end */ 
+} /* min-width:768 end */
 
 
 /* ---------------------------------------------
@@ -1428,7 +1428,7 @@ button.filter + label {
 .portfolio-items .mix {
   height: auto;
   margin-bottom: 30px;
-  max-height: 360px;
+  max-height: 330px;
   position: relative;
   display: none;
 }
@@ -1497,7 +1497,7 @@ button.filter + label {
   overflow: hidden;
   min-width: 320px;
   max-width: 480px;
-  max-height: 360px;
+  height: 330px;
   text-align: center;
   cursor: pointer;
 }
@@ -1926,7 +1926,7 @@ button.filter + label {
   font-family:"Merriweather",sans-serif
 }
 
-/* -------------------------------- 
+/* --------------------------------
 /* 7.a.  Social and Map Styles
 ----------------------------------- */
 .social {
@@ -2056,6 +2056,3 @@ button.filter + label {
 #map img {
   max-width:inherit!important
 }
-
-
-
