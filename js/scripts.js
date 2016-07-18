@@ -150,10 +150,10 @@ jQuery(document).ready(function($) {
             color: "#fff"
         }],
         angular: [{
-            value: 60,
+            value: 85,
             color: "#404148"
         }, {
-            value: 40,
+            value: 15,
             color: "#fff"
         }],
         php: [{
@@ -161,6 +161,27 @@ jQuery(document).ready(function($) {
             color: "#404148"
         }, {
             value: 50,
+            color: "#fff"
+        }],
+        node: [{
+            value: 70,
+            color: "#404148"
+        }, {
+            value: 30,
+            color: "#fff"
+        }],
+        sass: [{
+            value: 30,
+            color: "#404148"
+        }, {
+            value: 70,
+            color: "#fff"
+        }],
+        tools: [{
+            value: 95,
+            color: "#404148"
+        }, {
+            value: 5,
             color: "#fff"
         }],
         github: [{
@@ -222,15 +243,16 @@ jQuery(document).ready(function($) {
         $('#image-loader').fadeIn();
 
         var contactName = $('#contactForm #contactName').val();
+        var contactSubject = $("#contactSubject").val();
         var contactEmail = $('#contactForm #contactEmail').val();
         var contactMessage = $('#contactForm #contactMessage').val();
 
-        var data = 'contactName=' + contactName + '&contactEmail=' + contactEmail + '&contactMessage=' + contactMessage;
+        var data = 'contactName=' + contactName + '&contactSubject=' + contactSubject + '&contactEmail=' + contactEmail + '&contactMessage=' + contactMessage;
 
         $.ajax({
 
             type: "POST",
-            url: "inc/sendEmail.php",
+            url: "inc/mail_handler.php",
             data: data,
             success: function(msg) {
 

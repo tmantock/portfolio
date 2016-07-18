@@ -1348,6 +1348,21 @@ ul li {
   text-align:center
 }
 
+.git-icon {
+  position: absolute;
+  bottom: 1%;
+  right: 1%;
+  color: #000000;
+}
+
+.git-icon:hover {
+  color: #337ab7;
+}
+
+.git-link:hover {
+  text-decoration: none;
+}
+
 button.filter {
   background: #f3f3f3;
   border:0 none;
@@ -1829,6 +1844,10 @@ button.filter + label {
   margin:15px auto;
   padding:20px;
   width:48%
+}
+
+#contactSubject {
+  width: 100%;
 }
 
 .form-container input:focus,.form-container textarea:focus {
