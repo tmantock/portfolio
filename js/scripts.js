@@ -157,10 +157,10 @@ jQuery(document).ready(function($) {
             color: "#fff"
         }],
         php: [{
-            value: 50,
+            value: 70,
             color: "#404148"
         }, {
-            value: 50,
+            value: 30,
             color: "#fff"
         }],
         node: [{
