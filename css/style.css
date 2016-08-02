@@ -958,7 +958,7 @@ ul li {
 }
 
 .about-me .bio {
-  background: url("../img/bg-5.jpg") no-repeat scroll center center / cover  rgba(0, 0, 0, 0);
+  background-color: #484452;
   display:block;
   min-height:550px;
   margin:0 auto;
@@ -978,7 +978,8 @@ ul li {
 
 
 .about-me .bio h3 {
-  color: #3f3f46;
+  color: #000000;
+  font-weight: bold;
   font-family: PT Sans;
   font-size: 20px;
   line-height: 28px;
@@ -987,7 +988,8 @@ ul li {
 
 
 .about-me .bio p {
-  color:#555;
+  color:#000000;
+  font-weight: 600;
   font-size:16px;
   letter-spacing:.5px;
   line-height:22px
@@ -1203,6 +1205,17 @@ ul li {
   padding-right:150px
 }
 
+.donut-inner {
+   margin-top: -100px;
+   margin-bottom: 60px;
+}
+.donut-inner h5 {
+   margin-bottom: 5px;
+   margin-top: 0;
+}
+.donut-inner span {
+   font-size: 12px;
+}
 /* ------------------------------------------------
 /*  5.a. Skills Styles
 /* ------------------------------------------------*/
