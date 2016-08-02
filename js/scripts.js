@@ -117,6 +117,12 @@ jQuery(document).ready(function($) {
         singleItem: true
     });
 
+    // Mail to click handler
+
+    $(".hire-me").on('click',function () {
+       window.location.href = "mailto:tmantock@gmail.com";
+    })
+
     // Skills Chart
 
     var options = {
