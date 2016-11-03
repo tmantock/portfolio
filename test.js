@@ -20,7 +20,10 @@ function viewVisible(element){
   var targetElement = element.offset().top
   
   if(targetElement < windowBottom && targetElement > windowTop){
-    timeAdd(0,100);
+    var coffee = coffeeDrinks();
+    var coding = codingHours();
+    timeAdd(element, 0, coffee);
+    timeAdd(element, 0. coding);
   }
   else{
     console.log("Not in view");
@@ -46,6 +49,7 @@ function codingHours(){
   var msecSince = today - startDate;
   var daysSince = (msecSince /(1000*60*60*24));
   var codingHours = Math.round((hours * daysSince)/2);
+  return codingHours;
 }
 
 viewVisible($("#box"));
