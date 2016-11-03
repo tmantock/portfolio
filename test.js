@@ -27,7 +27,7 @@ function viewVisible(element){
   }
 }
 
-function coffee(){
+function coffeeDrinks(){
   var coffee = 2;
   var d = new Date();
   var today = d.getTime();
@@ -36,6 +36,16 @@ function coffee(){
   var daysSince = (msecSince /(1000*60*60*24));
   var coffeeDrunk = Math.round(daysSince * coffee);
   return coffeeDrunk;
+}
+
+function codingHours(){
+  var hours = 12;
+  var d = new Date();
+  var today = d.getTime();
+  var startDate = Date.parse("3/15/16");
+  var msecSince = today - startDate;
+  var daysSince = (msecSince /(1000*60*60*24));
+  var codingHours = Math.round((hours * daysSince)/2);
 }
 
 viewVisible($("#box"));
