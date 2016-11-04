@@ -342,8 +342,8 @@ function timeAdd(element, start,stop){
 //function for determining if a element is in view
 function viewVisible(element){
   var windowHeight = $(window).height();
-  var windowTop = $(window).scrollTop();
-  var windowBottom = (windowHeight - windowTop);
+  var windowTop = $(window).scrollTop() + (windowHeight * .10);
+  var windowBottom = (windowHeight - windowTop) - (windowHeight * .10);
   var targetElement = element.offset().top;
   var coffee = coffeeDrinks();
   var coding = codingHours();
