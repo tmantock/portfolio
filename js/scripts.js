@@ -1,3 +1,5 @@
+var set = false;
+
 // Preloader
 
   $(window).load(function(){
@@ -29,7 +31,7 @@ jQuery(document).ready(function($) {
     //close page
     $('.page-container .page-close').on('click', function() {
         toggleProject($('.is-full-width'), $('.page-container'), false);
-
+        set = false;
     });
 
     //scroll to page info
@@ -42,6 +44,7 @@ jQuery(document).ready(function($) {
     //update title and .page-scroll opacity while scrolling
     $('.page-container').on('scroll', function() {
         window.requestAnimationFrame(changeOpacity);
+        viewVisible($('.fun-facts'));
     });
 
     function toggleProject(project, container, bool) {
@@ -325,3 +328,57 @@ jQuery(document).ready(function($) {
         });
     };
 })(jQuery);
+
+//function for incrementing a number value over time
+function timeAdd(element, start,stop){
+  if(typeof(start)!=='number' && typeof(stop)!=='number' || start === stop){
+    return;
+  }
+  start++;
+  element.text(start);
+  setTimeout(function(){timeAdd(element, start,stop);}, 25);
+}
+
+//function for determining if a element is in view
+function viewVisible(element){
+  var windowHeight = $(window).height();
+  var windowTop = $(window).scrollTop();
+  var windowBottom = (windowHeight - windowTop);
+  var targetElement = element.offset().top;
+  var coffee = coffeeDrinks();
+  var coding = codingHours();
+
+  if(targetElement < windowBottom && targetElement > windowTop && set === false){
+    timeAdd($('.coffee-drink'), coffee - 100, coffee);
+    timeAdd($('.hours-code'), coding - 100, coding);
+    set = true;
+  }
+  // else{
+  //   $('.hours-code').text('0');
+  //   $('.coffee-drink').text('0');
+  // }
+}
+
+//function for determing the amount coffee drunken since March
+function coffeeDrinks(){
+  var coffee = 2;
+  var d = new Date();
+  var today = d.getTime();
+  var startDate = Date.parse("3/15/16");
+  var msecSince = today - startDate;
+  var daysSince = (msecSince /(1000*60*60*24));
+  var coffeeDrunk = Math.round(daysSince * coffee);
+  return parseInt(coffeeDrunk);
+}
+
+//function for determining the amount hours spent coding
+function codingHours(){
+  var hours = 12;
+  var d = new Date();
+  var today = d.getTime();
+  var startDate = Date.parse("3/15/16");
+  var msecSince = today - startDate;
+  var daysSince = (msecSince /(1000*60*60*24));
+  var codingHours = Math.round((hours * daysSince)/2);
+  return parseInt(codingHours);
+}
