@@ -145,45 +145,45 @@ jQuery(document).ready(function($) {
             color: "#fff"
         }],
         bootstrap: [{
-            value: 90,
+            value: 95,
             color: "#404148"
         }, {
-            value: 10,
+            value: 5,
             color: "#fff"
         }],
         js_jquery: [{
-            value: 90,
+            value: 95,
             color: "#404148"
         }, {
-            value: 10,
+            value: 5,
             color: "#fff"
         }],
         angular: [{
-            value: 85,
+            value: 95,
             color: "#404148"
         }, {
-            value: 15,
+            value: 5,
             color: "#fff"
         }],
         php: [{
-            value: 70,
+            value: 95,
             color: "#404148"
         }, {
-            value: 30,
+            value: 5,
             color: "#fff"
         }],
         node: [{
-            value: 70,
+            value: 95,
             color: "#404148"
         }, {
-            value: 30,
+            value: 5,
             color: "#fff"
         }],
         sass: [{
-            value: 30,
+            value: 95,
             color: "#404148"
         }, {
-            value: 70,
+            value: 5,
             color: "#fff"
         }],
         tools: [{
@@ -194,10 +194,10 @@ jQuery(document).ready(function($) {
             color: "#fff"
         }],
         github: [{
-            value: 85,
+            value: 95,
             color: "#404148"
         }, {
-            value: 25,
+            value: 5,
             color: "#fff"
         }]
     };
