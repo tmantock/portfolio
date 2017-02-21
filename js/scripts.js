@@ -379,6 +379,6 @@ function codingHours(){
   var startDate = Date.parse("3/15/16");
   var msecSince = today - startDate;
   var daysSince = (msecSince /(1000*60*60*24));
-  var codingHours = Math.round((hours * daysSince)/2);
+  var codingHours = Math.round((hours * daysSince));
   return parseInt(codingHours);
 }
