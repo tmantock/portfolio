@@ -173,17 +173,17 @@ jQuery(document).ready(function($) {
             color: "#fff"
         }],
         python: [{
-            value: 95,
+            value: 75,
             color: "#404148"
         }, {
-            value: 5,
+            value: 25,
             color: "#fff"
         }],
         go: [{
-            value: 95,
+            value: 75,
             color: "#404148"
         }, {
-            value: 5,
+            value: 25,
             color: "#fff"
         }],
         c: [{
