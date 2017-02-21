@@ -172,6 +172,27 @@ jQuery(document).ready(function($) {
             value: 5,
             color: "#fff"
         }],
+        python: [{
+            value: 95,
+            color: "#404148"
+        }, {
+            value: 5,
+            color: "#fff"
+        }],
+        go: [{
+            value: 95,
+            color: "#404148"
+        }, {
+            value: 5,
+            color: "#fff"
+        }],
+        c: [{
+            value: 65,
+            color: "#404148"
+        }, {
+            value: 35,
+            color: "#fff"
+        }],
         node: [{
             value: 95,
             color: "#404148"
