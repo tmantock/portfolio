@@ -145,45 +145,66 @@ jQuery(document).ready(function($) {
             color: "#fff"
         }],
         bootstrap: [{
-            value: 90,
+            value: 95,
             color: "#404148"
         }, {
-            value: 10,
+            value: 5,
             color: "#fff"
         }],
         js_jquery: [{
-            value: 90,
+            value: 95,
             color: "#404148"
         }, {
-            value: 10,
+            value: 5,
             color: "#fff"
         }],
         angular: [{
-            value: 85,
+            value: 95,
             color: "#404148"
         }, {
-            value: 15,
+            value: 5,
             color: "#fff"
         }],
         php: [{
-            value: 70,
+            value: 95,
             color: "#404148"
         }, {
-            value: 30,
+            value: 5,
+            color: "#fff"
+        }],
+        python: [{
+            value: 75,
+            color: "#404148"
+        }, {
+            value: 25,
+            color: "#fff"
+        }],
+        go: [{
+            value: 75,
+            color: "#404148"
+        }, {
+            value: 25,
+            color: "#fff"
+        }],
+        c: [{
+            value: 65,
+            color: "#404148"
+        }, {
+            value: 35,
             color: "#fff"
         }],
         node: [{
-            value: 70,
+            value: 95,
             color: "#404148"
         }, {
-            value: 30,
+            value: 5,
             color: "#fff"
         }],
         sass: [{
-            value: 30,
+            value: 95,
             color: "#404148"
         }, {
-            value: 70,
+            value: 5,
             color: "#fff"
         }],
         tools: [{
@@ -194,10 +215,10 @@ jQuery(document).ready(function($) {
             color: "#fff"
         }],
         github: [{
-            value: 85,
+            value: 95,
             color: "#404148"
         }, {
-            value: 25,
+            value: 5,
             color: "#fff"
         }]
     };
@@ -345,40 +366,23 @@ function viewVisible(element){
   var windowTop = $(window).scrollTop() + (windowHeight * .10);
   var windowBottom = (windowHeight - windowTop) - (windowHeight * .10);
   var targetElement = element.offset().top;
-  var coffee = coffeeDrinks();
-  var coding = codingHours();
+  var coffee = daysFromGenerator(2, "3/15/16");
+  var coding = daysFromGenerator(12, "3/15/16");
 
   if(targetElement < windowBottom && targetElement > windowTop && set === false){
     timeAdd($('.coffee-drink'), coffee - 100, coffee);
     timeAdd($('.hours-code'), coding - 100, coding);
     set = true;
   }
-  // else{
-  //   $('.hours-code').text('0');
-  //   $('.coffee-drink').text('0');
-  // }
 }
 
-//function for determing the amount coffee drunken since March
-function coffeeDrinks(){
-  var coffee = 2;
+//function for generating a running total of an action
+function daysFromGenerator(rate, startDate){
   var d = new Date();
   var today = d.getTime();
-  var startDate = Date.parse("3/15/16");
+  var startDate = Date.parse(startDate);
   var msecSince = today - startDate;
   var daysSince = (msecSince /(1000*60*60*24));
-  var coffeeDrunk = Math.round(daysSince * coffee);
-  return parseInt(coffeeDrunk);
-}
-
-//function for determining the amount hours spent coding
-function codingHours(){
-  var hours = 12;
-  var d = new Date();
-  var today = d.getTime();
-  var startDate = Date.parse("3/15/16");
-  var msecSince = today - startDate;
-  var daysSince = (msecSince /(1000*60*60*24));
-  var codingHours = Math.round((hours * daysSince)/2);
-  return parseInt(codingHours);
+  var days = Math.round(daysSince * rate);
+  return parseInt(days);
 }
